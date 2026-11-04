@@ -1,0 +1,52 @@
+# macOS metadata
+.DS_Store
+._*
+
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and installed dependencies
+.venv/
+venv/
+env/
+ENV/
+node_modules/
+
+# Temporary files and editor backups
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.~lock.*#
+tmp/
+temp/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Private quiz exports and participant-derived analysis
+# Keep real data in these folders; synthetic fixtures remain trackable.
+private_responses/
+private-responses/
+participant_responses/
+participant-responses/
+private_output/
+private-output/
+participant_output/
+participant-output/
+analysis/local_input/
+analysis/local_output/
+traveler-*-r*.json
+
+# Allow deliberately named synthetic export fixtures in these locations.
+!analysis/sample_responses/traveler-*-r*.json
+!tests/fixtures/traveler-*-r*.json
