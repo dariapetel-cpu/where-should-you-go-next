@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Travel presentation — browser checks</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;background:#fff8ee;color:#29243d;margin:24px}h1{font-size:28px}button{font:inherit;padding:12px 20px;border:0;border-radius:10px;background:#6240a5;color:white;cursor:pointer}button:disabled{opacity:.6}iframe{display:block;border:1px solid #baa8d1;margin-top:24px;background:white}pre{white-space:pre-wrap;background:#eee7f5;padding:20px;border-radius:12px}#frame-wrap{overflow:auto;max-width:100%}a{color:#6240a5}</style></head>
+<body><h1>Real-browser checks</h1><p>This local test page exercises the actual presentation and reads WebGL pixels. Run it in an active tab. It does not upload data or modify project files.</p><button id="run" type="button">Run browser checks</button> <a href="../index.html">Open presentation</a><pre id="report" role="status" aria-live="polite">Ready. These checks require WebGL 2.</pre><div id="frame-wrap"><iframe id="app" title="Presentation under test" width="1280" height="720" src="../index.html"></iframe></div><script src="browser-checks.js"></script></body>
+</html>
