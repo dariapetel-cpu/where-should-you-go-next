@@ -4,7 +4,7 @@
 
 **Version:** 4.1 — final implementation and submission baseline
 **Date:** November 6, 2026
-**Status:** Functional completion reported by the user; automated verification passed. Screenshot evidence and systematic browser/device review remain pending. Final work is local; no commit or push authorized.
+**Status:** Final sixteen-slide presentation committed and pushed to GitHub. Automated tests passed. Three real browser screenshots are included. Additional browser/device review remains pending.
 **Audience:** University students and assessors. All documents, interface content and analysis outputs are English.
 
 This specification records the delivered scope. It supersedes the incomplete-status and proposed implementation sections in [the preserved version 3 planning history](docs/PRD-v3-history.md). The seven approved questions, destination affinities and matching rules are unchanged. The latest instruction prioritizes a complete presentation and existing cinematic imagery over continued isolated 3D asset work.
