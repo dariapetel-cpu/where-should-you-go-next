@@ -9,8 +9,8 @@ Requirements: Python 3 for the local server and analysis; a modern browser. Node
 Clone the repository once, then run from its root (if already downloaded, open Terminal in that folder instead):
 
 ```sh
-git clone https://github.com/dariapetel-cpu/what-kind-of-traveler.git
-cd what-kind-of-traveler
+git clone https://github.com/dariapetel-cpu/where-should-you-go-next.git
+cd where-should-you-go-next
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
