@@ -16,9 +16,9 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 **Main submission entry point: [getaway.html](getaway.html).** Open **http://127.0.0.1:8000/getaway.html**. Keep Terminal running; stop the server with Control-C. Do not double-click the HTML file: local JSON and module loading require HTTP. No install, account, API key or internet connection is needed for the presentation. Official tourism reference links require internet.
 
-Opening the server root or `index.html` launches the **legacy twelve-slide personality presentation**, retained as development evidence. It is not the final submission entry point. `prototype/` contains earlier experiments; the final app reuses its catalog, matcher and local Three.js runtime. A GitHub repository file page displays source, not a running app; use the local server above. No hosted deployment is claimed.
+Opening the server root or `index.html` launches the **final sixteen-slide destination presentation**, retained as development evidence. It is not the final submission entry point. `prototype/` contains earlier experiments; the final app reuses its catalog, matcher and local Three.js runtime. A GitHub repository file page displays source, not a running app; use the local server above. No hosted deployment is claimed.
 
-**Publication status:** the final files are prepared locally but have not yet been committed or pushed. Until publication is authorized, a fresh clone of GitHub will still contain the older milestone.
+**Publication status:** The final presentation has been committed and pushed to GitHub.
 
 ## The complete journey
 
