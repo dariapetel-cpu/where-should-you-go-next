@@ -16,7 +16,7 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 **Main submission entry point: [getaway.html](getaway.html).** Open **http://127.0.0.1:8000/getaway.html**. Keep Terminal running; stop the server with Control-C. Do not double-click the HTML file: local JSON and module loading require HTTP. No install, account, API key or internet connection is needed for the presentation. Official tourism reference links require internet.
 
-Opening the server root or `index.html` launches the **final sixteen-slide destination presentation**, retained as development evidence. It is not the final submission entry point. `prototype/` contains earlier experiments; the final app reuses its catalog, matcher and local Three.js runtime. A GitHub repository file page displays source, not a running app; use the local server above. No hosted deployment is claimed.
+Opening the server root or `index.html` launches the final sixteen-slide destination presentation. The canonical entry point is `getaway.html`. Earlier experiments and the former personality quiz are preserved under `docs/` and `prototype/` as development history. Use the local server described above to run the presentation.
 
 **Publication status:** The final presentation has been committed and pushed to GitHub.
 
@@ -95,21 +95,17 @@ The user reported that the complete sixteen-slide presentation was working after
 
 See [the final review record and rehearsal checklist](docs/submission-review.md). Before submission, record browser/device details and check keyboard navigation, reduced motion, mobile layout, offline behavior, result reveal/recovery and all downloads. This can be a short manual rehearsal; do not mark unperformed checks as passed.
 
-## Screenshots — required submission evidence
+## Screenshots
 
-**No real browser screenshots are currently available in this repository.** Generated destination artwork is not screenshot evidence. Please capture these seven PNGs from the running app and save them in `docs/screenshots/`:
+Three real browser screenshots are available:
 
-| Filename | Capture exactly |
-| --- | --- |
-| `01-opening.png` | Slide 1, title and actual 3D suitcase visible. |
-| `02-question-selection.png` | Slide 4 with one answer visibly selected, enabled Continue and progress visible. |
-| `03-destination-result.png` | Slide 12 with recommended destination and the two personalized reasons visible. |
-| `04-attractions.png` | Slide 13 with one selected attraction and its detail panel. |
-| `05-three-day-itinerary.png` | Slide 14 with the complete-itinerary section expanded; a full-page screenshot is acceptable. |
-| `06-personalized-ending.png` | Slide 16 showing the personalized travel card and Restart Quiz button. |
-| `07-python-insights.png` | The final slide's Project insights dialog showing the synthetic chart and table, after running the documented Python demo. |
+![Opening slide](docs/screenshots/01-cover.png)
 
-Use a consistent desktop viewport, ideally 1440×900 or 1280×800. Capture actual browser output, with no developer tools or unrelated personal information. Do not recreate screens in an image generator. A mobile screenshot is optional additional evidence. Once the files exist, embed them here with descriptive alt text; no broken placeholder image links are included. [Capture checklist](docs/screenshots/README.md).
+![First quiz question](docs/screenshots/02-first-question.png)
+
+![Destination result](docs/screenshots/03-destination-result.png)
+
+Additional screenshots may be added for attractions, itinerary, final slide and Python analysis.
 
 ## Development process and assignment alignment
 
@@ -133,7 +129,7 @@ The reveal reliability fix treats the foreground layer as optional and updates n
 - `tests/`: regression, full-flow, static and Python tests.
 - `PRD.md`: current delivered specification and known limitations.
 - `prompts/`: actual request history and clearly labeled implementation summaries.
-- `index.html`: preserved legacy twelve-slide personality presentation.
+- `index.html`: alternative entry point for the final sixteen-slide presentation.
 - `prototype/`: preserved earlier isolated work and 3D experiments.
 - `docs/legacy-development.md`, `docs/PRD-v3-history.md`: previous README and planning baseline retained for assessment.
 
@@ -141,4 +137,4 @@ The reveal reliability fix treats the foreground layer as optional and updates n
 
 `.gitignore` excludes private response/output directories, personal downloads, `.Rhistory`, Python caches, environments, dependencies, temporary/log files, local credentials and browser-test artifacts. Synthetic fixtures and the prepared synthetic chart remain includable. Existing source artwork and third-party license/provenance records are intentionally retained; do not remove runtime dependencies simply because they live in `prototype/`. Ignore rules do not remove already tracked files; review the actual staged diff before committing.
 
-Remaining submission steps: add the seven real screenshots, finish the documented browser rehearsal, check any official rubric differences, then commit and push only with authorization. No commit or push is part of this preparation. Current Git history ends at the approved opening-slide redesign; later iterations are documented locally and await publication.
+Submission status: The final project has been committed and pushed to GitHub. Three real screenshots are included. Additional browser rehearsal and screenshots remain optional evidence, subject to the instructor's rubric.
