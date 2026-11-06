@@ -1,0 +1,11 @@
+/* Complete presentation state; uses the approved matcher without altering legacy/prototype data. */
+(function(root){'use strict';const Q=root.GetawayMatch||(typeof require==='function'?require('../prototype/matcher.js'):null);
+const KEY='travel-edit.getaway.complete.v1',VERSION='getaway-16-v1',LETTERS='abcd';
+function fresh(id){if(typeof id!=='string'||!/^[a-zA-Z0-9-]{8,80}$/.test(id))throw Error('Invalid attempt ID');return {version:VERSION,id,revision:1,answers:{},slide:0,motion:true,revealed:false};}
+function accessible(s,n){if(!Number.isInteger(n)||n<0||n>15)return false;if(n<4)return true;const ids=['vacation','interests','pace','companions','budget','packing','dream'];return ids.slice(0,Math.min(7,n-3)).every(id=>LETTERS.includes(s.answers[id])&&typeof s.answers[id]==='string'&&s.answers[id].length===1);}
+function choose(c,s,id,value){Q.validate(c,{[id]:value},true);if(s.answers[id]===value)return s;return {...s,revision:s.revision+1,answers:{...s.answers,[id]:value},revealed:false};}
+function recover(c,raw){const s=JSON.parse(raw);if(!s||s.version!==VERSION||Object.keys(s).sort().join()!==['version','id','revision','answers','slide','motion','revealed'].sort().join()||typeof s.motion!=='boolean'||typeof s.revealed!=='boolean'||!Number.isSafeInteger(s.revision)||s.revision<1)throw Error('Invalid saved session');fresh(s.id);Q.validate(c,s.answers,true);if(s.revision<Object.keys(s.answers).length+1||!accessible(s,s.slide)||s.revealed&&!accessible(s,11))throw Error('Unreachable saved session');return s;}
+function result(c,s){return Q.result(c,s.answers);}
+function exported(c,s,origin='participant'){if(!['participant','synthetic'].includes(origin))throw Error('Invalid origin');const r=result(c,s);return {schema_version:2,quiz_version:VERSION,catalog_version:c.catalog_version,matcher_version:c.matcher_version,response_id:s.id,revision:s.revision,data_origin:origin,answers:c.questions.map(q=>({question_id:q.id,option_id:q.id+'.'+s.answers[q.id]})),ranking:r.ranking.map(v=>({destination_id:v.id,score:v.score})),primary_destination_id:r.winner.id,alternative_destination_ids:r.ranking.slice(1,3).map(v=>v.id)};}
+const api={KEY,VERSION,fresh,accessible,choose,recover,result,exported};root.GetawayCore=api;if(typeof module!=='undefined')module.exports=api;
+})(typeof window!=='undefined'?window:globalThis);

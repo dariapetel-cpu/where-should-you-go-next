@@ -1,0 +1,14 @@
+# Destination source review — November 5, 2026
+
+The attraction names and broad setting use official tourism starting points. Affinity ratings and personalized activity wording are editorial decisions, not facts supplied by tourism organizations. All models are original procedural geometry, with no downloaded models, textures or external rendering APIs. Compositions deliberately compress geography.
+
+| Sample | Primary sources | Scope supported |
+| --- | --- | --- |
+| Paris | [Official tourism guide](https://parisjetaime.com/eng/), [Eiffel Tower operator](https://www.toureiffel.paris/en) | Paris landmarks; detailed attraction access verification remains pending. The attempted tourism article URL was unavailable, so it was not retained as evidence. |
+| Tokyo | [Official three-day overview](https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html), [Asakusa guide](https://www.gotokyo.org/en/destinations/eastern-tokyo/asakusa/), [Eastern Tokyo](https://www.gotokyo.org/en/destinations/eastern-tokyo/index.html) | Asakusa, Shibuya and riverfront themes. Our personalized plan is independently written, not a reproduction of their itinerary. |
+| Bali | [Indonesia Tourism — Bali](https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali), [Sanur](https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali/sanur0) | Sanur coast, Ubud cultural traditions and Tegalalang terraces. Sanur is associated with sunrise; the scene uses morning light, not a claimed sunset view. |
+| Swiss Alps | [Switzerland Tourism — Lake Stelli](https://www.myswitzerland.com/en-us/destinations/lake-stelli/), [Zermatt lakes](https://zermatt.swiss/en/discover-experience/villages/lakes) | Mountain lake and Matterhorn identity. This does not establish safe access, seasonal opening or a suitable walking route. |
+
+New catalog starting points checked: [Visit London](https://www.visitlondon.com/), [NYC Tourism](https://www.nyctourism.com/), [Tourism Authority of Thailand — Bangkok](https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219). These support broad themes; the NYC page returned little extractable detail. [Visit Greece — Naxos](https://www.visitgreece.gr/islands/cyclades/naxos/) timed out and remains a source-review task. The seven retained destination entries keep the official guide links reviewed during the earlier prototype. Iceland now names the country, but its draft itinerary remains explicitly Reykjavík-based.
+
+No current price, operating hour, transfer duration or accessible-route promise is made. Before final release: verify individual attractions, permissions/entry conditions, activity uniqueness, routes, weather dependencies and accessible alternatives. The four samples currently offer twelve interest-specific activity suggestions each, grouped into three areas; these are not the final twelve independently verified activity records required by the PRD.

@@ -1,0 +1,1866 @@
+{
+  "version": "getaway-content-1",
+  "origin": "Editorial travel suggestions; check access and costs before visiting.",
+  "destinations": {
+    "paris": {
+      "accent": "#345D70",
+      "tile": 0,
+      "base": "Paris",
+      "areas": [
+        {
+          "id": "paris-0",
+          "place": "Eiffel Tower",
+          "source": "https://parisjetaime.com/eng/",
+          "activities": [
+            {
+              "id": "paris-0-0",
+              "interest": "a",
+              "title": "A picnic pause near the tower",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "paris-0-1",
+              "interest": "b",
+              "title": "Study the tower’s ironwork from the Champ de Mars",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "paris-0-2",
+              "interest": "c",
+              "title": "Walk a comfortable section of the Champ de Mars",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "paris-0-3",
+              "interest": "d",
+              "title": "Watch the city turn golden around the tower",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "paris-1",
+          "place": "Seine riverbanks",
+          "source": "https://parisjetaime.com/eng/",
+          "activities": [
+            {
+              "id": "paris-1-0",
+              "interest": "a",
+              "title": "Find a café near the Seine",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "paris-1-1",
+              "interest": "b",
+              "title": "Look for sculptural details on a river bridge",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "paris-1-2",
+              "interest": "c",
+              "title": "Follow a short section of the riverbank",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "paris-1-3",
+              "interest": "d",
+              "title": "Take an early-evening riverside stroll",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "paris-2",
+          "place": "Montmartre",
+          "source": "https://parisjetaime.com/eng/",
+          "activities": [
+            {
+              "id": "paris-2-0",
+              "interest": "a",
+              "title": "Settle into a Montmartre café",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "paris-2-1",
+              "interest": "b",
+              "title": "Notice the neighborhood’s artistic streets",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "paris-2-2",
+              "interest": "c",
+              "title": "Choose a short Montmartre walking loop",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "paris-2-3",
+              "interest": "d",
+              "title": "Enjoy the neighborhood as the lights come on",
+              "source": "https://parisjetaime.com/eng/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "rome": {
+      "accent": "#95573D",
+      "tile": 1,
+      "base": "Rome",
+      "areas": [
+        {
+          "id": "rome-0",
+          "place": "Roman Forum",
+          "source": "https://www.turismoroma.it/en",
+          "activities": [
+            {
+              "id": "rome-0-0",
+              "interest": "a",
+              "title": "Pause for a meal in the Forum neighborhood",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "rome-0-1",
+              "interest": "b",
+              "title": "Make the Roman Forum your history anchor",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "rome-0-2",
+              "interest": "c",
+              "title": "Explore the streets around the archaeological area",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "rome-0-3",
+              "interest": "d",
+              "title": "Return to the surrounding streets in softer evening light",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "rome-1",
+          "place": "Trevi Fountain",
+          "source": "https://www.turismoroma.it/en",
+          "activities": [
+            {
+              "id": "rome-1-0",
+              "interest": "a",
+              "title": "Take a food break in the Trevi neighborhood",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "rome-1-1",
+              "interest": "b",
+              "title": "Look closely at the fountain’s sculptural details",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "rome-1-2",
+              "interest": "c",
+              "title": "Explore nearby lanes on foot",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "rome-1-3",
+              "interest": "d",
+              "title": "Find an early-evening view of the fountain",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "rome-2",
+          "place": "Trastevere",
+          "source": "https://www.turismoroma.it/en",
+          "activities": [
+            {
+              "id": "rome-2-0",
+              "interest": "a",
+              "title": "Make time for a Trastevere meal",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "rome-2-1",
+              "interest": "b",
+              "title": "Notice the neighborhood’s architectural textures",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "rome-2-2",
+              "interest": "c",
+              "title": "Follow a relaxed neighborhood walking loop",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "rome-2-3",
+              "interest": "d",
+              "title": "Enjoy Trastevere’s evening atmosphere",
+              "source": "https://www.turismoroma.it/en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "barcelona": {
+      "accent": "#B16243",
+      "tile": 2,
+      "base": "Barcelona",
+      "areas": [
+        {
+          "id": "barcelona-0",
+          "place": "Gothic Quarter",
+          "source": "https://thisisbarcelona.com/",
+          "activities": [
+            {
+              "id": "barcelona-0-0",
+              "interest": "a",
+              "title": "Make a food stop in the Gothic Quarter",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "barcelona-0-1",
+              "interest": "b",
+              "title": "Look for details in the old quarter’s architecture",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "barcelona-0-2",
+              "interest": "c",
+              "title": "Wander a short route through the narrow streets",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "barcelona-0-3",
+              "interest": "d",
+              "title": "Enjoy the quarter as the day cools",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "barcelona-1",
+          "place": "Sagrada Família",
+          "source": "https://thisisbarcelona.com/",
+          "activities": [
+            {
+              "id": "barcelona-1-0",
+              "interest": "a",
+              "title": "Pause for a neighborhood meal near the basilica",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "barcelona-1-1",
+              "interest": "b",
+              "title": "Make the Sagrada Família your architecture focus",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "barcelona-1-2",
+              "interest": "c",
+              "title": "Walk around the basilica to compare its façades",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "barcelona-1-3",
+              "interest": "d",
+              "title": "See the exterior in the changing evening light",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "barcelona-2",
+          "place": "Barceloneta waterfront",
+          "source": "https://thisisbarcelona.com/",
+          "activities": [
+            {
+              "id": "barcelona-2-0",
+              "interest": "a",
+              "title": "Find a meal near Barceloneta",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "barcelona-2-1",
+              "interest": "b",
+              "title": "Notice the waterfront’s urban character",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "barcelona-2-2",
+              "interest": "c",
+              "title": "Take a promenade walk beside the sea",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "barcelona-2-3",
+              "interest": "d",
+              "title": "Leave time for a coastal evening",
+              "source": "https://thisisbarcelona.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "london": {
+      "accent": "#486780",
+      "tile": 3,
+      "base": "London",
+      "areas": [
+        {
+          "id": "london-0",
+          "place": "Westminster",
+          "source": "https://www.visitlondon.com/",
+          "activities": [
+            {
+              "id": "london-0-0",
+              "interest": "a",
+              "title": "Take a food break in the Westminster area",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "london-0-1",
+              "interest": "b",
+              "title": "Make Westminster’s architecture your focus",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "london-0-2",
+              "interest": "c",
+              "title": "Walk a comfortable route beside the Thames",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "london-0-3",
+              "interest": "d",
+              "title": "Watch the riverside lights come on",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "london-1",
+          "place": "South Bank",
+          "source": "https://www.visitlondon.com/",
+          "activities": [
+            {
+              "id": "london-1-0",
+              "interest": "a",
+              "title": "Make a relaxed South Bank food stop",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "london-1-1",
+              "interest": "b",
+              "title": "Look for art and cultural details along the South Bank",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "london-1-2",
+              "interest": "c",
+              "title": "Walk a section of the riverfront",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "london-1-3",
+              "interest": "d",
+              "title": "Enjoy the South Bank’s evening atmosphere",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "london-2",
+          "place": "Borough Market",
+          "source": "https://www.visitlondon.com/",
+          "activities": [
+            {
+              "id": "london-2-0",
+              "interest": "a",
+              "title": "Explore Borough Market’s food traditions",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "london-2-1",
+              "interest": "b",
+              "title": "Look at the architecture around the market",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "london-2-2",
+              "interest": "c",
+              "title": "Take a short walk through the surrounding streets",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "london-2-3",
+              "interest": "d",
+              "title": "Plan an earlier market visit and an evening nearby",
+              "source": "https://www.visitlondon.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "amsterdam": {
+      "accent": "#56766E",
+      "tile": 4,
+      "base": "Amsterdam",
+      "areas": [
+        {
+          "id": "amsterdam-0",
+          "place": "Canal district",
+          "source": "https://www.iamsterdam.com/en/see-and-do",
+          "activities": [
+            {
+              "id": "amsterdam-0-0",
+              "interest": "a",
+              "title": "Find a café along the canals",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "amsterdam-0-1",
+              "interest": "b",
+              "title": "Notice the narrow canal-house façades",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "amsterdam-0-2",
+              "interest": "c",
+              "title": "Choose a short canal-side walking loop",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "amsterdam-0-3",
+              "interest": "d",
+              "title": "Enjoy reflections along the canals at dusk",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "amsterdam-1",
+          "place": "Rijksmuseum",
+          "source": "https://www.iamsterdam.com/en/see-and-do",
+          "activities": [
+            {
+              "id": "amsterdam-1-0",
+              "interest": "a",
+              "title": "Pause for a meal in the museum neighborhood",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "amsterdam-1-1",
+              "interest": "b",
+              "title": "Make Rijksmuseum your art anchor; check entry",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "amsterdam-1-2",
+              "interest": "c",
+              "title": "Explore the surrounding museum district on foot",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "amsterdam-1-3",
+              "interest": "d",
+              "title": "Keep the museum for daytime and the neighborhood for evening",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "amsterdam-2",
+          "place": "Vondelpark",
+          "source": "https://www.iamsterdam.com/en/see-and-do",
+          "activities": [
+            {
+              "id": "amsterdam-2-0",
+              "interest": "a",
+              "title": "Bring a suitable snack for a park pause",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "amsterdam-2-1",
+              "interest": "b",
+              "title": "Look at the park’s designed spaces",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "amsterdam-2-2",
+              "interest": "c",
+              "title": "Walk a comfortable section of Vondelpark",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "amsterdam-2-3",
+              "interest": "d",
+              "title": "Enjoy a calm late-afternoon park visit",
+              "source": "https://www.iamsterdam.com/en/see-and-do",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "lisbon": {
+      "accent": "#AE654B",
+      "tile": 5,
+      "base": "Lisbon",
+      "areas": [
+        {
+          "id": "lisbon-0",
+          "place": "Alfama",
+          "source": "https://www.visitlisboa.com/?lang=en",
+          "activities": [
+            {
+              "id": "lisbon-0-0",
+              "interest": "a",
+              "title": "Choose a food stop in Alfama",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "lisbon-0-1",
+              "interest": "b",
+              "title": "Notice tiles and architectural details in Alfama",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "lisbon-0-2",
+              "interest": "c",
+              "title": "Take a short route through Alfama; check gradients",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "lisbon-0-3",
+              "interest": "d",
+              "title": "Enjoy the neighborhood’s evening atmosphere",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "lisbon-1",
+          "place": "Belém waterfront",
+          "source": "https://www.visitlisboa.com/?lang=en",
+          "activities": [
+            {
+              "id": "lisbon-1-0",
+              "interest": "a",
+              "title": "Pause for a local food tradition in Belém",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "lisbon-1-1",
+              "interest": "b",
+              "title": "Explore the heritage around the Belém waterfront",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "lisbon-1-2",
+              "interest": "c",
+              "title": "Take a comfortable riverside walk",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "lisbon-1-3",
+              "interest": "d",
+              "title": "Make room for the waterfront at golden hour",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "lisbon-2",
+          "place": "Baixa",
+          "source": "https://www.visitlisboa.com/?lang=en",
+          "activities": [
+            {
+              "id": "lisbon-2-0",
+              "interest": "a",
+              "title": "Find a café in Baixa",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "lisbon-2-1",
+              "interest": "b",
+              "title": "Look at Baixa’s streets and squares",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "lisbon-2-2",
+              "interest": "c",
+              "title": "Choose a manageable walking loop through Baixa",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "lisbon-2-3",
+              "interest": "d",
+              "title": "Watch central Lisbon shift into evening",
+              "source": "https://www.visitlisboa.com/?lang=en",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "tokyo": {
+      "accent": "#604F7E",
+      "tile": 6,
+      "base": "Tokyo",
+      "areas": [
+        {
+          "id": "tokyo-0",
+          "place": "Asakusa",
+          "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+          "activities": [
+            {
+              "id": "tokyo-0-0",
+              "interest": "a",
+              "title": "Explore food traditions around Asakusa",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "tokyo-0-1",
+              "interest": "b",
+              "title": "Look closely at Asakusa’s temple architecture",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "tokyo-0-2",
+              "interest": "c",
+              "title": "Walk a short historic-neighborhood loop",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "tokyo-0-3",
+              "interest": "d",
+              "title": "Explore the streets as lanterns begin to light",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "tokyo-1",
+          "place": "Shibuya",
+          "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+          "activities": [
+            {
+              "id": "tokyo-1-0",
+              "interest": "a",
+              "title": "Choose a food stop in Shibuya",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "tokyo-1-1",
+              "interest": "b",
+              "title": "Notice the contemporary cityscape around the crossing",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "tokyo-1-2",
+              "interest": "c",
+              "title": "Walk beyond the crossing into nearby streets",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "tokyo-1-3",
+              "interest": "d",
+              "title": "Make Shibuya’s evening streets your main experience",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "tokyo-2",
+          "place": "Sumida riverfront",
+          "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+          "activities": [
+            {
+              "id": "tokyo-2-0",
+              "interest": "a",
+              "title": "Pause for a snack before the riverfront",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "tokyo-2-1",
+              "interest": "b",
+              "title": "Notice the bridges along the Sumida",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "tokyo-2-2",
+              "interest": "c",
+              "title": "Leave time for a riverside walk",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "tokyo-2-3",
+              "interest": "d",
+              "title": "Enjoy the riverfront in the early evening",
+              "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "kyoto": {
+      "accent": "#6A775C",
+      "tile": 7,
+      "base": "Kyoto",
+      "areas": [
+        {
+          "id": "kyoto-0",
+          "place": "Nishiki Market",
+          "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+          "activities": [
+            {
+              "id": "kyoto-0-0",
+              "interest": "a",
+              "title": "Make Nishiki Market your food anchor",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "kyoto-0-1",
+              "interest": "b",
+              "title": "Notice the market’s traditional details",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "kyoto-0-2",
+              "interest": "c",
+              "title": "Explore the surrounding streets on foot",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "kyoto-0-3",
+              "interest": "d",
+              "title": "Visit the market earlier and leave the evening open",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "kyoto-1",
+          "place": "Nanzen-ji temple area",
+          "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+          "activities": [
+            {
+              "id": "kyoto-1-0",
+              "interest": "a",
+              "title": "Take a meal break in the Nanzen-ji area",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "kyoto-1-1",
+              "interest": "b",
+              "title": "Focus on the temple area’s architecture",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "kyoto-1-2",
+              "interest": "c",
+              "title": "Explore a suitable outdoor route around Nanzen-ji",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "kyoto-1-3",
+              "interest": "d",
+              "title": "Choose a daylight temple visit and a quiet evening",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "kyoto-2",
+          "place": "Arashiyama",
+          "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+          "activities": [
+            {
+              "id": "kyoto-2-0",
+              "interest": "a",
+              "title": "Find a meal in the Arashiyama area",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "kyoto-2-1",
+              "interest": "b",
+              "title": "Look for traditional architectural details nearby",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "kyoto-2-2",
+              "interest": "c",
+              "title": "Choose a comfortable outdoor Arashiyama route",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "kyoto-2-3",
+              "interest": "d",
+              "title": "Enjoy the changing light before returning to your base",
+              "source": "https://www.japan.travel/en/destinations/kansai/kyoto/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "new-york": {
+      "accent": "#446789",
+      "tile": 8,
+      "base": "New York",
+      "areas": [
+        {
+          "id": "new-york-0",
+          "place": "Central Park",
+          "source": "https://www.nyctourism.com/",
+          "activities": [
+            {
+              "id": "new-york-0-0",
+              "interest": "a",
+              "title": "Leave time for a park-side food stop",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "new-york-0-1",
+              "interest": "b",
+              "title": "Notice the park’s landscapes and architectural edges",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "new-york-0-2",
+              "interest": "c",
+              "title": "Choose a short Central Park walking route",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "new-york-0-3",
+              "interest": "d",
+              "title": "Enjoy the park in late-afternoon light",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "new-york-1",
+          "place": "Brooklyn Bridge",
+          "source": "https://www.nyctourism.com/",
+          "activities": [
+            {
+              "id": "new-york-1-0",
+              "interest": "a",
+              "title": "Pause for a meal around the bridge approach",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "new-york-1-1",
+              "interest": "b",
+              "title": "Look at the bridge’s structure and skyline views",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "new-york-1-2",
+              "interest": "c",
+              "title": "Walk an appropriate section of the bridge route",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "new-york-1-3",
+              "interest": "d",
+              "title": "Make room for skyline views at dusk",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "new-york-2",
+          "place": "Midtown",
+          "source": "https://www.nyctourism.com/",
+          "activities": [
+            {
+              "id": "new-york-2-0",
+              "interest": "a",
+              "title": "Choose a food stop in Midtown",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "new-york-2-1",
+              "interest": "b",
+              "title": "Look up at Midtown’s architecture",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "new-york-2-2",
+              "interest": "c",
+              "title": "Follow a manageable city-block loop",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "new-york-2-3",
+              "interest": "d",
+              "title": "Explore Midtown’s illuminated evening streets",
+              "source": "https://www.nyctourism.com/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "bali": {
+      "accent": "#287F80",
+      "tile": 9,
+      "base": "Sanur with separate Ubud-area days",
+      "areas": [
+        {
+          "id": "bali-0",
+          "place": "Sanur coast",
+          "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+          "activities": [
+            {
+              "id": "bali-0-0",
+              "interest": "a",
+              "title": "Make a relaxed food stop near Sanur",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bali-0-1",
+              "interest": "b",
+              "title": "Explore the coastal neighborhood at an easy pace",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bali-0-2",
+              "interest": "c",
+              "title": "Walk a short section of the Sanur shoreline",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bali-0-3",
+              "interest": "d",
+              "title": "Enjoy a calm coastal evening",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "bali-1",
+          "place": "Ubud",
+          "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+          "activities": [
+            {
+              "id": "bali-1-0",
+              "interest": "a",
+              "title": "Explore Ubud’s food traditions",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bali-1-1",
+              "interest": "b",
+              "title": "Make Ubud’s artistic traditions your focus",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bali-1-2",
+              "interest": "c",
+              "title": "Choose a comfortable outdoor neighborhood route",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bali-1-3",
+              "interest": "d",
+              "title": "Look into a local cultural performance; check its schedule",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "bali-2",
+          "place": "Tegalalang terraces",
+          "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+          "activities": [
+            {
+              "id": "bali-2-0",
+              "interest": "a",
+              "title": "Pause for a meal in the wider Ubud area",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bali-2-1",
+              "interest": "b",
+              "title": "Learn about the terraces as a cultural landscape",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bali-2-2",
+              "interest": "c",
+              "title": "Choose a terrace viewpoint after checking access",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bali-2-3",
+              "interest": "d",
+              "title": "Prioritize a daylight terrace visit and a quiet evening",
+              "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "bangkok": {
+      "accent": "#99704B",
+      "tile": 10,
+      "base": "Bangkok",
+      "areas": [
+        {
+          "id": "bangkok-0",
+          "place": "Rattanakosin",
+          "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+          "activities": [
+            {
+              "id": "bangkok-0-0",
+              "interest": "a",
+              "title": "Explore food traditions in the old-city area",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bangkok-0-1",
+              "interest": "b",
+              "title": "Make Rattanakosin’s heritage your focus",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bangkok-0-2",
+              "interest": "c",
+              "title": "Choose a short old-city walking route",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bangkok-0-3",
+              "interest": "d",
+              "title": "Enjoy the surrounding streets in the early evening",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "bangkok-1",
+          "place": "Chao Phraya riverfront",
+          "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+          "activities": [
+            {
+              "id": "bangkok-1-0",
+              "interest": "a",
+              "title": "Find a riverside meal or snack stop",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bangkok-1-1",
+              "interest": "b",
+              "title": "Notice the riverfront’s architectural contrasts",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bangkok-1-2",
+              "interest": "c",
+              "title": "Take a suitable riverside walking route",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bangkok-1-3",
+              "interest": "d",
+              "title": "Watch the riverfront lights come on",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "bangkok-2",
+          "place": "Chinatown",
+          "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+          "activities": [
+            {
+              "id": "bangkok-2-0",
+              "interest": "a",
+              "title": "Make Chinatown your food-discovery anchor",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bangkok-2-1",
+              "interest": "b",
+              "title": "Notice the neighborhood’s shopfronts and architecture",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bangkok-2-2",
+              "interest": "c",
+              "title": "Follow a manageable Chinatown street loop",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "bangkok-2-3",
+              "interest": "d",
+              "title": "Enjoy the illuminated evening streets",
+              "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "greek-islands": {
+      "accent": "#307F9D",
+      "tile": 11,
+      "base": "Naxos",
+      "areas": [
+        {
+          "id": "greek-islands-0",
+          "place": "Naxos old town",
+          "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+          "activities": [
+            {
+              "id": "greek-islands-0-0",
+              "interest": "a",
+              "title": "Pause for a meal in Naxos old town",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "greek-islands-0-1",
+              "interest": "b",
+              "title": "Notice the whitewashed lanes and architectural details",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "greek-islands-0-2",
+              "interest": "c",
+              "title": "Take a short old-town walking loop",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "greek-islands-0-3",
+              "interest": "d",
+              "title": "Enjoy the town as the evening cools",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "greek-islands-1",
+          "place": "Portara",
+          "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+          "activities": [
+            {
+              "id": "greek-islands-1-0",
+              "interest": "a",
+              "title": "Plan a nearby food break before or after the landmark",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "greek-islands-1-1",
+              "interest": "b",
+              "title": "Make Portara your heritage anchor",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "greek-islands-1-2",
+              "interest": "c",
+              "title": "Choose a suitable route to the landmark viewpoint",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "greek-islands-1-3",
+              "interest": "d",
+              "title": "Leave space for changing light around Portara",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "greek-islands-2",
+          "place": "Agios Georgios beach",
+          "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+          "activities": [
+            {
+              "id": "greek-islands-2-0",
+              "interest": "a",
+              "title": "Find a relaxed coastal food stop",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "greek-islands-2-1",
+              "interest": "b",
+              "title": "Notice the coastal neighborhood’s character",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "greek-islands-2-2",
+              "interest": "c",
+              "title": "Walk a comfortable section of Agios Georgios beach",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "greek-islands-2-3",
+              "interest": "d",
+              "title": "Enjoy an unhurried seaside evening",
+              "source": "https://www.visitgreece.gr/islands/cyclades/naxos/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "swiss-alps": {
+      "accent": "#477E7C",
+      "tile": 12,
+      "base": "Zermatt",
+      "areas": [
+        {
+          "id": "swiss-alps-0",
+          "place": "Zermatt village",
+          "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+          "activities": [
+            {
+              "id": "swiss-alps-0-0",
+              "interest": "a",
+              "title": "Choose a Zermatt village food stop",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "swiss-alps-0-1",
+              "interest": "b",
+              "title": "Notice the village’s timber architecture",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "swiss-alps-0-2",
+              "interest": "c",
+              "title": "Take a comfortable village walk",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "swiss-alps-0-3",
+              "interest": "d",
+              "title": "Enjoy the village in the early evening",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "swiss-alps-1",
+          "place": "Matterhorn viewpoints",
+          "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+          "activities": [
+            {
+              "id": "swiss-alps-1-0",
+              "interest": "a",
+              "title": "Pair a suitable viewpoint with a meal break",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "swiss-alps-1-1",
+              "interest": "b",
+              "title": "Look for interpretation of the mountain landscape",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "swiss-alps-1-2",
+              "interest": "c",
+              "title": "Choose a viewpoint suited to conditions and ability",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "swiss-alps-1-3",
+              "interest": "d",
+              "title": "Prioritize daylight mountain views and return to the village",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "swiss-alps-2",
+          "place": "Stellisee",
+          "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+          "activities": [
+            {
+              "id": "swiss-alps-2-0",
+              "interest": "a",
+              "title": "Consider a picnic if the lake route is suitable",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "swiss-alps-2-1",
+              "interest": "b",
+              "title": "Look at the landscape reflected in the lake",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "swiss-alps-2-2",
+              "interest": "c",
+              "title": "Consider Stellisee after checking seasonal access",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "swiss-alps-2-3",
+              "interest": "d",
+              "title": "Keep the lake visit in daylight and the evening in the village",
+              "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "iceland": {
+      "accent": "#546D81",
+      "tile": 13,
+      "base": "Reykjavík",
+      "areas": [
+        {
+          "id": "iceland-0",
+          "place": "Reykjavík harbour",
+          "source": "https://visitreykjavik.is/",
+          "activities": [
+            {
+              "id": "iceland-0-0",
+              "interest": "a",
+              "title": "Choose a food stop around Reykjavík harbour",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "iceland-0-1",
+              "interest": "b",
+              "title": "Notice the harbour’s maritime character",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "iceland-0-2",
+              "interest": "c",
+              "title": "Take a short harbour-side walk",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "iceland-0-3",
+              "interest": "d",
+              "title": "Enjoy the changing light along the waterfront",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "iceland-1",
+          "place": "Harpa",
+          "source": "https://visitreykjavik.is/",
+          "activities": [
+            {
+              "id": "iceland-1-0",
+              "interest": "a",
+              "title": "Pause for a meal in the Harpa neighborhood",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "iceland-1-1",
+              "interest": "b",
+              "title": "Look closely at Harpa’s architectural details",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "iceland-1-2",
+              "interest": "c",
+              "title": "Explore the nearby waterfront on foot",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "iceland-1-3",
+              "interest": "d",
+              "title": "See Harpa’s exterior in the evening light",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "iceland-2",
+          "place": "Hallgrímskirkja",
+          "source": "https://visitreykjavik.is/",
+          "activities": [
+            {
+              "id": "iceland-2-0",
+              "interest": "a",
+              "title": "Find a neighborhood café near the church",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "iceland-2-1",
+              "interest": "b",
+              "title": "Make Hallgrímskirkja your architecture anchor",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "iceland-2-2",
+              "interest": "c",
+              "title": "Walk a manageable route through the surrounding streets",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "iceland-2-3",
+              "interest": "d",
+              "title": "Enjoy the cityscape as the light changes",
+              "source": "https://visitreykjavik.is/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    },
+    "queenstown": {
+      "accent": "#487775",
+      "tile": 14,
+      "base": "Queenstown",
+      "areas": [
+        {
+          "id": "queenstown-0",
+          "place": "Queenstown Gardens",
+          "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+          "activities": [
+            {
+              "id": "queenstown-0-0",
+              "interest": "a",
+              "title": "Bring a suitable snack for a garden pause",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "queenstown-0-1",
+              "interest": "b",
+              "title": "Notice the gardens’ designed landscape",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "queenstown-0-2",
+              "interest": "c",
+              "title": "Choose a comfortable Queenstown Gardens route",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "queenstown-0-3",
+              "interest": "d",
+              "title": "Enjoy a quiet late-afternoon garden visit",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "queenstown-1",
+          "place": "Lake Wakatipu waterfront",
+          "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+          "activities": [
+            {
+              "id": "queenstown-1-0",
+              "interest": "a",
+              "title": "Find a food stop near Lake Wakatipu",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "queenstown-1-1",
+              "interest": "b",
+              "title": "Look at the relationship between town and lake",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "queenstown-1-2",
+              "interest": "c",
+              "title": "Take a suitable section of the lakeside path",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "queenstown-1-3",
+              "interest": "d",
+              "title": "Leave time for the lake in changing evening light",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        },
+        {
+          "id": "queenstown-2",
+          "place": "Arrowtown",
+          "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+          "activities": [
+            {
+              "id": "queenstown-2-0",
+              "interest": "a",
+              "title": "Plan a meal during your Arrowtown day",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "queenstown-2-1",
+              "interest": "b",
+              "title": "Notice Arrowtown’s historic streetscape",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "queenstown-2-2",
+              "interest": "c",
+              "title": "Choose a comfortable village walking route",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            },
+            {
+              "id": "queenstown-2-3",
+              "interest": "d",
+              "title": "Explore in daylight and return with time to spare",
+              "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/",
+              "accessibility": "Check route and venue accessibility.",
+              "spend": "unknown"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

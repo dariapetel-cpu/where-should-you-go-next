@@ -15,7 +15,7 @@ function setup({fail=false}={}){
     querySelector(){return this.error;}
     getBoundingClientRect(){return {left:0,top:0,width:500,height:500};}
   }
-  const canvases=Object.fromEntries(['suitcase','map','compass','chair','cup','globe'].map(n=>[n,new Target()]));
+  const canvases=Object.fromEntries(['suitcase','map','compass','chair','cup','globe','journey'].map(n=>[n,new Target()]));
   const cards=['map','compass','chair','cup'].map(n=>{const t=new Target();t.dataset.modelChoice=n;return t;});
   const hero=new Target(),doc=new Target(),win=new Target();doc.hidden=false;
   doc.querySelector=s=>s==='#suitcase-stage'?hero:canvases[s.match(/data-model="(\w+)"/)[1]];
@@ -26,7 +26,7 @@ function setup({fail=false}={}){
     inspectFrame(){return {nonBackgroundPixels:123};}
   }
   win.Travel3D={Studio,chain:(...a)=>a,T:(...a)=>a,RY:v=>v,RZ:v=>v};
-  win.TravelModels=Object.fromEntries(['suitcase','map','compass','chair','cup','globe'].map(n=>[n,p=>({name:n,params:p})]));
+  win.TravelModels=Object.fromEntries(['suitcase','map','compass','chair','cup','globe','journey'].map(n=>[n,p=>({name:n,params:p})]));
   const raf=f=>{scheduled.set(++id,f);return id;};
   vm.runInNewContext(source,{window:win,document:doc,matchMedia:()=>({matches:false}),requestAnimationFrame:raf,cancelAnimationFrame:i=>scheduled.delete(i),ResizeObserver:class{constructor(f){observers.push(f);}observe(){}},console:{warn(){}}});
   function frames(n=1){for(let i=0;i<n;i++){time+=40;const todo=[...scheduled.values()];scheduled.clear();todo.forEach(f=>f(time));}}
@@ -71,4 +71,37 @@ test('hover and preference selection update the object scene; mood indices remai
 test('diagnostics only read an available visible scene',()=>{
   const t=setup();assert.equal(t.api.inspectFrame('suitcase'),null);t.api.setSlide('welcome');t.frames();assert.ok(t.api.inspectFrame('suitcase').nonBackgroundPixels>0);
   t.api.setSlide('mood');t.frames();assert.equal(t.api.inspectFrame('suitcase'),null);
+});
+
+test('quiz slides reuse one renderer and stop hidden opening scenes',()=>{
+  const t=setup();t.api.setSlide('welcome');t.frames();const before=t.canvases.suitcase.dataset.frames;
+  t.api.setSlide('boarding');t.api.setMotion(false);t.frames();assert.equal(t.api.status().renderers.length,2);
+  t.api.turnJourney();t.frames();assert.equal(t.renders.at(-1).objects.params.angle,0);
+  for(const id of ['q1','q2','q3','q4','q5','q6','q7','match']){t.api.setSlide(id);t.frames();assert.equal(t.renders.at(-1).objects.params.slide,id);assert.equal(t.renders.at(-1).objects.params.angle,0);}
+  assert.equal(t.api.status().renderers.length,2);assert.equal(t.canvases.suitcase.dataset.frames,before);assert.equal(t.scheduled.size,0);
+  t.api.setJourneyResult(3);t.frames();assert.equal(t.renders.at(-1).objects.params.mood,3);
+});
+
+test('sample pointer tracking uses bounded spring easing, recenters and stops',()=>{
+ const t=setup(),surface=t.canvases.journey;t.api.setSlide('boarding');t.frames();
+ surface.fire('pointermove',{pointerType:'mouse',clientX:500,clientY:500});t.frames();
+ let p=t.renders.at(-1).objects.params;assert.ok(p.angle>0&&p.angle<.24);assert.ok(p.pitch>0&&p.pitch<.14);
+ t.frames(60);p=t.renders.at(-1).objects.params;assert.ok(Math.abs(p.angle-.24)<.001);assert.equal(t.scheduled.size,0);
+ surface.fire('pointerleave');t.frames(60);assert.ok(Math.abs(t.renders.at(-1).objects.params.angle)<.001);assert.equal(t.scheduled.size,0);
+});
+test('sample touch drag requires contact; reduced motion ignores pointer movement but permits keyboard poses',()=>{
+ const t=setup(),surface=t.canvases.journey;t.api.setSlide('q1');t.frames();
+ surface.fire('pointermove',{pointerType:'touch',pointerId:1,clientX:400,clientY:400});t.frames();assert.equal(t.renders.at(-1).objects.params.angle,0);
+ surface.fire('pointerdown',{pointerType:'touch',pointerId:1,clientX:100,clientY:100});surface.fire('pointermove',{pointerType:'touch',pointerId:1,clientX:180,clientY:140});t.frames(40);assert.ok(t.renders.at(-1).objects.params.angle>.2);
+ surface.fire('pointercancel');t.frames(60);assert.ok(Math.abs(t.renders.at(-1).objects.params.angle)<.001);
+ t.api.setMotion(false);surface.fire('pointermove',{pointerType:'mouse',clientX:500,clientY:500});t.frames();assert.equal(t.renders.at(-1).objects.params.angle,0);
+ surface.fire('keydown',{key:'ArrowRight'});t.frames();assert.equal(t.renders.at(-1).objects.params.angle,.08);assert.equal(t.scheduled.size,0);
+ surface.fire('keydown',{key:'Home'});t.frames();assert.equal(t.renders.at(-1).objects.params.angle,0);
+});
+test('sample selection restores the correct object; later slides retain their original click rotation',()=>{
+ const t=setup();t.api.setSlide('q2');t.api.setSampleChoice('q2',2);t.frames();
+ assert.equal(t.renders.at(-1).objects.params.choice,2);assert.ok(t.renders.at(-1).objects.params.packed<1);
+ t.frames(60);assert.ok(t.renders.at(-1).objects.params.packed>.999);assert.equal(t.scheduled.size,0);
+ t.api.setSlide('q3');t.api.setMotion(false);t.api.turnJourney();t.frames();assert.ok(t.renders.at(-1).objects.params.angle>1);
+ t.api.setSlide('q2');t.frames();assert.equal(t.renders.at(-1).objects.params.choice,2);
 });

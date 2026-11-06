@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "quiz_version": "getaway-16-v1",
+  "catalog_version": "getaway-2.0.0",
+  "matcher_version": "1.0.0",
+  "response_id": "synthetic-lisbon-02",
+  "revision": 8,
+  "data_origin": "synthetic",
+  "answers": [
+    {
+      "question_id": "vacation",
+      "option_id": "vacation.b"
+    },
+    {
+      "question_id": "interests",
+      "option_id": "interests.a"
+    },
+    {
+      "question_id": "pace",
+      "option_id": "pace.a"
+    },
+    {
+      "question_id": "companions",
+      "option_id": "companions.a"
+    },
+    {
+      "question_id": "budget",
+      "option_id": "budget.a"
+    },
+    {
+      "question_id": "packing",
+      "option_id": "packing.a"
+    },
+    {
+      "question_id": "dream",
+      "option_id": "dream.a"
+    }
+  ],
+  "ranking": [
+    {
+      "destination_id": "lisbon",
+      "score": 51
+    },
+    {
+      "destination_id": "greek-islands",
+      "score": 31
+    },
+    {
+      "destination_id": "bangkok",
+      "score": 27
+    },
+    {
+      "destination_id": "bali",
+      "score": 26
+    },
+    {
+      "destination_id": "barcelona",
+      "score": 24
+    },
+    {
+      "destination_id": "paris",
+      "score": 23
+    },
+    {
+      "destination_id": "tokyo",
+      "score": 21
+    },
+    {
+      "destination_id": "amsterdam",
+      "score": 21
+    },
+    {
+      "destination_id": "new-york",
+      "score": 21
+    },
+    {
+      "destination_id": "london",
+      "score": 19
+    },
+    {
+      "destination_id": "rome",
+      "score": 13
+    },
+    {
+      "destination_id": "kyoto",
+      "score": 12
+    },
+    {
+      "destination_id": "iceland",
+      "score": 9
+    },
+    {
+      "destination_id": "queenstown",
+      "score": 5
+    },
+    {
+      "destination_id": "swiss-alps",
+      "score": 3
+    }
+  ],
+  "primary_destination_id": "lisbon",
+  "alternative_destination_ids": [
+    "greek-islands",
+    "bangkok"
+  ]
+}

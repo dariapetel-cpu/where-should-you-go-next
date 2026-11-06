@@ -1,4 +1,4 @@
-/* Three-slide presentation controls; visual exploration remains unscored. */
+/* Presentation shell; opening exploration remains unscored. */
 (() => {
   'use strict';
 
@@ -16,6 +16,7 @@
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const categories = ['THE DEPARTURE', 'FOLLOW YOUR CURIOSITY', 'A WORLD OF POSSIBILITIES'];
   const scenes = window.TravelScenes;
+  const journey = window.QuizJourney;
   let suitcaseOpen = false;
   let current = 0;
   let motionEnabled = !reducedMotion.matches;
@@ -39,6 +40,7 @@
 
   function showSlide(index, { updateHistory = true, focus = true } = {}) {
     if (!Number.isInteger(index) || index < 0 || index >= slides.length) return;
+    if (journey && !journey.canEnter(index)) { journey.blocked(); return; }
     const direction = index >= current ? 1 : -1;
     const changed = index !== current;
     current = index;
@@ -57,6 +59,7 @@
     next.disabled = current === slides.length - 1;
     next.hidden = next.disabled;
     document.querySelector('#restart-slides').hidden = !next.disabled;
+    journey?.onSlide(active.id);
     scenes?.setSlide(active.id);
     next.replaceChildren(document.createTextNode(next.disabled ? 'Chapter complete' : 'Next '));
     if (!next.disabled) {
@@ -85,7 +88,7 @@
     const index = slides.findIndex(slide => `#${slide.id}` === window.location.hash);
     // Non-slide anchors (including the skip link) must not reset the chapter.
     if (index < 0 && window.location.hash !== '' && !initial) return;
-    showSlide(index < 0 ? 0 : index, { updateHistory: false, focus: !initial });
+    showSlide(index < 0 || (journey && !journey.canEnter(index)) ? 0 : index, { updateHistory: false, focus: !initial });
   }
 
   previous.addEventListener('click', () => showSlide(current - 1));
@@ -98,8 +101,8 @@
   window.addEventListener('popstate', () => restoreFromHash());
   window.addEventListener('hashchange', () => restoreFromHash());
   document.addEventListener('keydown', event => {
-    if (overview.open || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
-    if (event.target.closest('button, a, input, textarea, select, [contenteditable="true"], [role="radio"]')) return;
+    if ([...document.querySelectorAll('dialog')].some(dialog => dialog.open) || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+    if (event.target.closest('button, a, input, textarea, select, summary, [contenteditable="true"], [role="radio"]')) return;
     const destinations = { ArrowRight: current + 1, ArrowLeft: current - 1, Home: 0, End: slides.length - 1 };
     if (!(event.key in destinations)) return;
     event.preventDefault();
@@ -117,6 +120,7 @@
     const enabled = motionEnabled && !reducedMotion.matches;
     document.documentElement.dataset.motion = enabled ? 'on' : 'off';
     scenes?.setMotion(enabled);
+    journey?.motion(enabled);
     motionToggle.setAttribute('aria-pressed', String(enabled));
     motionToggle.disabled = reducedMotion.matches;
     motionLabel.textContent = enabled ? 'Motion on' : 'Motion off';
@@ -197,6 +201,11 @@
   });
   document.querySelector('#surprise-button').addEventListener('click', () => chooseMood((captionIndex + 1) % moods.length));
 
+  journey?.connect({
+    navigate: showSlide,
+    refresh() { overviewButtons.forEach((button, index) => { button.disabled = !journey.canEnter(index); }); },
+    setMotion(value) { motionEnabled = value; renderMotion(); }
+  });
   renderMotion();
   restoreFromHash({ initial: true });
 })();

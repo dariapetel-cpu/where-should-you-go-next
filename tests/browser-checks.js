@@ -7,6 +7,8 @@ run.addEventListener('click',async()=>{
   run.disabled=true;report.textContent='Running…\n';let passed=0,failed=0;const failures=[];
   async function check(label,fn){try{await fn();passed++;report.textContent+=`PASS  ${label}\n`;}catch(error){failed++;failures.push(label);report.textContent+=`FAIL  ${label}: ${error.message}\n`;}}
   function assert(value,message){if(!value)throw new Error(message);}
+  const storageKey='travel-edit.quiz.v1';let previousSession,storageAvailable=false;
+  try{previousSession=sessionStorage.getItem(storageKey);sessionStorage.removeItem(storageKey);storageAvailable=true;}catch{}
   try{
     frame.width=1280;frame.height=720;
     await new Promise((resolve,reject)=>{
@@ -16,6 +18,7 @@ run.addEventListener('click',async()=>{
     });
     await until(()=>frame.contentWindow.TravelScenes&&frame.contentDocument.querySelector('#hero-action'),'Application did not load');
     const win=frame.contentWindow,doc=frame.contentDocument,el=id=>doc.getElementById(id),click=id=>el(id).click();
+    await until(()=>win.QuizJourney?.ready,'Quiz content did not load');
     // Disable ambient movement for deterministic GPU comparisons.
     if(el('motion-toggle').getAttribute('aria-pressed')==='true')click('motion-toggle');
     await until(()=>doc.querySelector('[data-model="suitcase"]').dataset.frames,'Suitcase did not render');
@@ -61,13 +64,45 @@ run.addEventListener('click',async()=>{
     });
     await check('Overview, navigation, heading focus and progress agree',()=>{
       click('overview-open');assert(el('slide-overview').open,'Overview did not open');doc.querySelectorAll('.overview-link')[0].click();
-      assert(!el('slide-overview').open&&!el('welcome').hidden,'Overview selection failed');assert(doc.activeElement.id==='welcome-heading','Heading focus missing');assert(el('slide-counter').textContent==='Slide 1 of 3','Wrong progress');
-      el('welcome-heading').dispatchEvent(new win.KeyboardEvent('keydown',{key:'End',bubbles:true}));assert(!el('mood').hidden,'End navigation failed');click('restart-slides');assert(!el('welcome').hidden,'Restart failed');
+      assert(!el('slide-overview').open&&!el('welcome').hidden,'Overview selection failed');assert(doc.activeElement.id==='welcome-heading','Heading focus missing');assert(el('slide-counter').textContent==='Slide 1 of 12','Wrong progress');
+      el('welcome-heading').dispatchEvent(new win.KeyboardEvent('keydown',{key:'End',bubbles:true}));assert(!el('welcome').hidden,'End bypassed unanswered questions');
+    });
+    await check('Boarding pass and all seven questions render, gate navigation and reveal a complete match',async()=>{
+      click('overview-open');doc.querySelectorAll('.overview-link')[3].click();
+      await until(()=>win.TravelScenes.inspectFrame('journey'),'Shared 3D scene did not render');
+      const surface=doc.querySelector('.journey-object');
+      surface.dispatchEvent(new win.KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true}));await pause(100);
+      assert(Number(doc.querySelector('[data-model="journey"]').dataset.pose.split(',')[0])>.05,'Keyboard view did not change');
+      surface.dispatchEvent(new win.KeyboardEvent('keydown',{key:'Home',bubbles:true}));await pause(100);
+      if(!el('motion-toggle').disabled){
+        click('motion-toggle');const box=surface.getBoundingClientRect();
+        surface.dispatchEvent(new win.PointerEvent('pointermove',{pointerType:'mouse',clientX:box.right-1,clientY:box.bottom-1,bubbles:true}));await pause(600);
+        assert(Number(doc.querySelector('[data-model="journey"]').dataset.pose.split(',')[0])>.1,'Pointer movement did not turn airplane');click('motion-toggle');
+      }
+      click('start-quiz');click('next-slide');assert(!el('q1').hidden,'Unanswered question was skipped');
+      for(let i=1;i<=7;i++){
+        const slide=el(`q${i}`);assert(!slide.hidden,`Q${i} not active`);await pause(100);
+        const before=win.TravelScenes.inspectFrame('journey');assert(before&&before.error===0&&before.nonBackgroundPixels>150,`Q${i} has no 3D pixels`);
+        if(i===2)slide.querySelector('[data-pack]').click();else slide.querySelector('input').click();await pause(100);
+        assert(slide.querySelector('input').checked,'Choice not checked');
+        assert(win.TravelScenes.inspectFrame('journey').hash!==before.hash,'Answer did not update the 3D scene');
+        slide.querySelector('.quiz-next').click();
+      }
+      assert(!el('match').hidden,'Result did not reveal');assert(el('match-heading').textContent.startsWith('The '),'No personality');
+      assert(el('destination-name').textContent.length>5,'No destination');assert(el('sample-day').children.length===3,'No personalized sample day');
+      assert(win.TravelScenes.status().renderers.length===7,'Quiz allocated extra WebGL contexts');
+    });
+    await check('Review preserves choices and edits increase the export revision',()=>{
+      const before=JSON.parse(win.sessionStorage.getItem(storageKey));click('review-answers');
+      const choices=el('q1').querySelectorAll('input');assert(choices[0].checked,'Saved choice missing');choices[1].click();
+      el('q1').querySelector('.return-results').click();const after=JSON.parse(win.sessionStorage.getItem(storageKey));
+      assert(after.response_id===before.response_id&&after.revision===before.revision+1,'Revision identity incorrect');
+      assert(!el('match').hidden,'Return to results failed');
     });
     for(const [width,height] of [[1280,720],[1440,900],[1920,1080],[768,1024],[390,844]]){
       await check(`Layout at ${width}×${height}`,async()=>{
         frame.width=width;frame.height=height;await pause(180);click('restart-slides');
-        for(let i=0;i<3;i++){
+        for(let i=0;i<12;i++){
           if(i)click('next-slide');await pause(100);
           assert(doc.documentElement.scrollWidth<=win.innerWidth+2,`Slide ${i+1} has horizontal overflow`);
           if(width>=1280)assert(doc.documentElement.scrollHeight<=win.innerHeight+2,`Slide ${i+1} needs desktop vertical scrolling`);
@@ -85,5 +120,5 @@ run.addEventListener('click',async()=>{
     report.textContent+='Manual checks still required: pointer movement, native keyboard activation/Escape, screen reader, 200% browser zoom, subjective visual quality and offline reload.\n';
     if(failures.length)report.textContent+='Failures: '+failures.join('; ');
   }catch(error){report.textContent+=`\nSETUP FAILED: ${error.message}\n`;}
-  finally{run.disabled=false;}
+  finally{if(storageAvailable){if(previousSession===null)sessionStorage.removeItem(storageKey);else sessionStorage.setItem(storageKey,previousSession);}run.disabled=false;}
 });

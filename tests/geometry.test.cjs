@@ -68,3 +68,34 @@ test('closed and open suitcase stay in frame at mobile aspect and rotation bound
     }
   }
 });
+
+test('every new scene has volumetric meshes and stays below the existing triangle budget',()=>{
+  for(const slide of ['boarding','q1','q2','q3','q4','q5','q6','q7','match']){
+    const objects=M.journey({slide,angle:.4,mood:3});
+    assert.ok(objects.length>5,slide);
+    const triangles=objects.reduce((sum,o)=>sum+o.geometry.indices.length/3,0);
+    assert.ok(triangles<50000,`${slide}: ${triangles}`);
+    for(const o of objects){assert.ok([...o.matrix].every(Number.isFinite));assert.ok(o.geometry.positions.length>0);}
+  }
+});
+
+test('new 3D compositions stay framed through a full turn on narrow canvases',()=>{
+  const vp=G.mul(G.perspective(Math.PI/5.3,.9),G.lookAt([3,2.1,6.5],[0,0,0]));
+  for(const slide of ['boarding','q1','q2','q3','q4','q5','q6','q7','match'])for(let turn=0;turn<6;turn++){
+    for(const object of M.journey({slide,angle:turn*Math.PI/3,mood:3})){
+      const matrix=G.mul(vp,object.matrix),points=object.geometry.positions;
+      for(let i=0;i<points.length;i+=3){const p=transform(matrix,[points[i],points[i+1],points[i+2]]);assert.ok(Math.abs(p[0]/p[3])<1&&Math.abs(p[1]/p[3])<1,`${slide} clips at turn ${turn}`);}
+    }
+  }
+});
+
+test('sample hero geometry stays in frame at pointer extremes and throughout packing',()=>{
+ const vp=G.mul(G.perspective(Math.PI/5.3,.9),G.lookAt([3,2.1,6.5],[0,0,0]));
+ for(const slide of ['boarding','q1','q2'])for(const angle of [-.24,.24])for(const pitch of [-.14,.14])for(const choice of [0,1,2,3])for(const packed of [0,1]){
+  const objects=M.sampleScene({slide,angle,pitch,choice,packed,lift:-pitch*.3});
+  assert.ok(objects.reduce((n,o)=>n+o.geometry.indices.length/3,0)<50000,slide);
+  for(const o of objects){const matrix=G.mul(vp,o.matrix),vertices=o.geometry.positions;
+   for(let i=0;i<vertices.length;i+=3){const p=transform(matrix,[vertices[i],vertices[i+1],vertices[i+2]]);assert.ok(Math.abs(p[0]/p[3])<1&&Math.abs(p[1]/p[3])<1,`${slide} clips with choice ${choice} packed ${packed}`);}
+  }
+ }
+});

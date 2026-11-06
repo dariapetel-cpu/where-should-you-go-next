@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "quiz_version": "1.0.0",
+  "tie_priority": [
+    "q7",
+    "q1",
+    "q5",
+    "q4",
+    "q2",
+    "q3",
+    "q6"
+  ],
+  "profiles": {
+    "planner": {
+      "name": "The Planner",
+      "destination": "Kyoto, Japan",
+      "message": "You enjoy turning ideas into a clear, satisfying itinerary.",
+      "tip": "Group nearby stops and leave buffer time.",
+      "day": [
+        "A neighborhood walk",
+        "Time in a temple garden"
+      ],
+      "mornings": [
+        "A planned temple visit",
+        "An exploratory neighborhood walk",
+        "A leisurely breakfast with a view",
+        "A Japanese-style breakfast"
+      ]
+    },
+    "adventurer": {
+      "name": "The Adventurer",
+      "destination": "Queenstown, New Zealand",
+      "message": "You enjoy discovery, variety, and trying something new.",
+      "tip": "Match outdoor activities to your ability and the conditions.",
+      "day": [
+        "Time beside Lake Wakatipu",
+        "A suitable supervised outdoor experience"
+      ],
+      "mornings": [
+        "A planned visit to Queenstown Gardens",
+        "An exploratory lakeside walk",
+        "A slow breakfast with a lake view",
+        "A locally prepared breakfast"
+      ]
+    },
+    "relaxer": {
+      "name": "The Relaxer",
+      "destination": "The Algarve, Portugal",
+      "message": "You value a comfortable pace and time to recharge.",
+      "tip": "Choose one main activity and keep the rest flexible.",
+      "day": [
+        "Unhurried time by the coast",
+        "A sunset stroll"
+      ],
+      "mornings": [
+        "A planned town-center visit",
+        "An exploratory coastal walk",
+        "A leisurely breakfast with a sea view",
+        "A Portuguese-style breakfast"
+      ]
+    },
+    "food_explorer": {
+      "name": "The Food Explorer",
+      "destination": "Bologna, Italy",
+      "message": "You connect with a place through its flavors and food traditions.",
+      "tip": "Check dietary options and leave breaks between food stops.",
+      "day": [
+        "A local cooking workshop",
+        "A regional meal"
+      ],
+      "mornings": [
+        "A planned market visit",
+        "An exploratory walk through the market streets",
+        "A leisurely breakfast at a cafe",
+        "A local breakfast before browsing the markets"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "title": "A free day abroad",
+      "prompt": "You have a free day in a new city. What sounds best?",
+      "theme": "map",
+      "options": [
+        {
+          "id": "q1o2",
+          "profile_id": "adventurer",
+          "text": "Explore an unfamiliar neighborhood."
+        },
+        {
+          "id": "q1o4",
+          "profile_id": "food_explorer",
+          "text": "Visit a market and taste something new."
+        },
+        {
+          "id": "q1o1",
+          "profile_id": "planner",
+          "text": "Follow a route of saved landmarks."
+        },
+        {
+          "id": "q1o3",
+          "profile_id": "relaxer",
+          "text": "Find a quiet spot and take it slow."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "title": "Before you leave",
+      "prompt": "What do you enjoy doing before a trip?",
+      "theme": "packing",
+      "options": [
+        {
+          "id": "q2o3",
+          "profile_id": "relaxer",
+          "text": "Leave plenty of unscheduled time."
+        },
+        {
+          "id": "q2o1",
+          "profile_id": "planner",
+          "text": "Build a simple daily itinerary."
+        },
+        {
+          "id": "q2o4",
+          "profile_id": "food_explorer",
+          "text": "Save local dishes and places to eat."
+        },
+        {
+          "id": "q2o2",
+          "profile_id": "adventurer",
+          "text": "Look for an unusual activity to try."
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "title": "A change of plans",
+      "prompt": "Your original plan falls through. What do you do?",
+      "theme": "route",
+      "options": [
+        {
+          "id": "q3o4",
+          "profile_id": "food_explorer",
+          "text": "Find a nearby cafe or food market."
+        },
+        {
+          "id": "q3o2",
+          "profile_id": "adventurer",
+          "text": "Follow an unexpected opportunity."
+        },
+        {
+          "id": "q3o3",
+          "profile_id": "relaxer",
+          "text": "Take a break and reset the day."
+        },
+        {
+          "id": "q3o1",
+          "profile_id": "planner",
+          "text": "Choose a backup from my saved list."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "title": "Your perfect morning",
+      "prompt": "How would you begin a day away?",
+      "theme": "morning",
+      "options": [
+        {
+          "id": "q4o1",
+          "profile_id": "planner",
+          "text": "Start early with a planned attraction."
+        },
+        {
+          "id": "q4o3",
+          "profile_id": "relaxer",
+          "text": "Enjoy a slow breakfast and a view."
+        },
+        {
+          "id": "q4o2",
+          "profile_id": "adventurer",
+          "text": "Set out on a new trail or route."
+        },
+        {
+          "id": "q4o4",
+          "profile_id": "food_explorer",
+          "text": "Try a local breakfast specialty."
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "title": "One small treat",
+      "prompt": "You have room in your budget for one extra experience. Which do you choose?",
+      "theme": "voucher",
+      "options": [
+        {
+          "id": "q5o2",
+          "profile_id": "adventurer",
+          "text": "Try a new outdoor activity."
+        },
+        {
+          "id": "q5o1",
+          "profile_id": "planner",
+          "text": "Join a guided cultural visit."
+        },
+        {
+          "id": "q5o4",
+          "profile_id": "food_explorer",
+          "text": "Take a local cooking workshop."
+        },
+        {
+          "id": "q5o3",
+          "profile_id": "relaxer",
+          "text": "Spend time in a peaceful garden."
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "title": "Your group role",
+      "prompt": "What role do you naturally take on a group trip?",
+      "theme": "group",
+      "options": [
+        {
+          "id": "q6o3",
+          "profile_id": "relaxer",
+          "text": "Make sure everyone has time to rest."
+        },
+        {
+          "id": "q6o4",
+          "profile_id": "food_explorer",
+          "text": "Help the group discover local food."
+        },
+        {
+          "id": "q6o1",
+          "profile_id": "planner",
+          "text": "Organize the route and meeting times."
+        },
+        {
+          "id": "q6o2",
+          "profile_id": "adventurer",
+          "text": "Suggest a spontaneous detour."
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "title": "The best memory",
+      "prompt": "Which memory would you most like to bring home?",
+      "theme": "memory",
+      "options": [
+        {
+          "id": "q7o4",
+          "profile_id": "food_explorer",
+          "text": "Discovering a dish I want to make again."
+        },
+        {
+          "id": "q7o3",
+          "profile_id": "relaxer",
+          "text": "Feeling rested and refreshed."
+        },
+        {
+          "id": "q7o2",
+          "profile_id": "adventurer",
+          "text": "Doing something I had never tried."
+        },
+        {
+          "id": "q7o1",
+          "profile_id": "planner",
+          "text": "Seeing the places I hoped to visit."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kyoto City Official Guide — temples and gardens",
+      "url": "https://kyoto.travel/en/",
+      "publisher": "Kyoto City Tourism Association"
+    },
+    {
+      "title": "Queenstown — walking and hiking",
+      "url": "https://www.queenstownnz.co.nz/listing/lake-sylvan-track/10788/",
+      "publisher": "Destination Queenstown"
+    },
+    {
+      "title": "Cycling and walking in the Algarve",
+      "url": "https://www.visitportugal.com/en/destinos/algarve/304109",
+      "publisher": "Turismo de Portugal"
+    },
+    {
+      "title": "Bologna Gourmet — local cooking and markets",
+      "url": "https://www.bolognawelcome.com/en/clubs/cooking-schools-and-sfogline/bologna-gourmet-a-casa-ilaria-2",
+      "publisher": "Bologna Welcome"
+    }
+  ]
+}

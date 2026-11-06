@@ -1,0 +1,158 @@
+{
+  "catalog": "getaway-2.0.0",
+  "wins": {
+    "greek-islands": 1528,
+    "lisbon": 1279,
+    "bangkok": 1625,
+    "bali": 1402,
+    "kyoto": 1313,
+    "barcelona": 1391,
+    "queenstown": 1205,
+    "rome": 860,
+    "iceland": 1100,
+    "swiss-alps": 1169,
+    "amsterdam": 642,
+    "paris": 552,
+    "london": 453,
+    "new-york": 823,
+    "tokyo": 1042
+  },
+  "ties": 1406,
+  "witnesses": {
+    "greek-islands": {
+      "vacation": "a",
+      "interests": "a",
+      "pace": "a",
+      "companions": "a",
+      "budget": "a",
+      "packing": "a",
+      "dream": "a"
+    },
+    "lisbon": {
+      "vacation": "b",
+      "interests": "a",
+      "pace": "a",
+      "companions": "a",
+      "budget": "a",
+      "packing": "a",
+      "dream": "a"
+    },
+    "bangkok": {
+      "vacation": "d",
+      "interests": "a",
+      "pace": "a",
+      "companions": "a",
+      "budget": "a",
+      "packing": "a",
+      "dream": "a"
+    },
+    "bali": {
+      "vacation": "c",
+      "interests": "b",
+      "pace": "a",
+      "companions": "a",
+      "budget": "a",
+      "packing": "a",
+      "dream": "a"
+    },
+    "kyoto": {
+      "vacation": "d",
+      "interests": "b",
+      "pace": "a",
+      "companions": "a",
+      "budget": "a",
+      "packing": "a",
+      "dream": "a"
+    },
+    "barcelona": {
+      "vacation": "a",
+      "interests": "d",
+      "pace": "a",
+      "companions": "a",
+      "budget": "a",
+      "packing": "a",
+      "dream": "a"
+    },
+    "queenstown": {
+      "vacation": "c",
+      "interests": "b",
+      "pace": "c",
+      "companions": "a",
+      "budget": "a",
+      "packing": "a",
+      "dream": "a"
+    },
+    "rome": {
+      "vacation": "d",
+      "interests": "b",
+      "pace": "c",
+      "companions": "a",
+      "budget": "a",
+      "packing": "a",
+      "dream": "a"
+    },
+    "iceland": {
+      "vacation": "c",
+      "interests": "c",
+      "pace": "d",
+      "companions": "a",
+      "budget": "a",
+      "packing": "a",
+      "dream": "a"
+    },
+    "swiss-alps": {
+      "vacation": "c",
+      "interests": "b",
+      "pace": "b",
+      "companions": "d",
+      "budget": "a",
+      "packing": "a",
+      "dream": "a"
+    },
+    "amsterdam": {
+      "vacation": "b",
+      "interests": "b",
+      "pace": "a",
+      "companions": "a",
+      "budget": "b",
+      "packing": "a",
+      "dream": "a"
+    },
+    "paris": {
+      "vacation": "b",
+      "interests": "b",
+      "pace": "b",
+      "companions": "b",
+      "budget": "b",
+      "packing": "a",
+      "dream": "a"
+    },
+    "london": {
+      "vacation": "b",
+      "interests": "b",
+      "pace": "a",
+      "companions": "a",
+      "budget": "c",
+      "packing": "a",
+      "dream": "a"
+    },
+    "new-york": {
+      "vacation": "b",
+      "interests": "d",
+      "pace": "a",
+      "companions": "a",
+      "budget": "c",
+      "packing": "a",
+      "dream": "a"
+    },
+    "tokyo": {
+      "vacation": "b",
+      "interests": "d",
+      "pace": "a",
+      "companions": "a",
+      "budget": "b",
+      "packing": "d",
+      "dream": "a"
+    }
+  }
+}

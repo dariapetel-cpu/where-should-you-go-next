@@ -1,0 +1,71 @@
+/* Review sample: slides 4–6 only. Existing slide styles remain untouched. */
+html[data-sample="boarding"]{--sample-accent:#285b73;--sample-soft:#e4f0f5}
+html[data-sample="q1"]{--sample-accent:#904632;--sample-soft:#faebdd}
+html[data-sample="q2"]{--sample-accent:#326552;--sample-soft:#e4efe5}
+html[data-sample="boarding"] body{background:#f6faf9}html[data-sample="q1"] body{background:#fff8ef}html[data-sample="q2"] body{background:#f6f9ef}
+html[data-sample="boarding"] #progress-fill,html[data-sample="q1"] #progress-fill,html[data-sample="q2"] #progress-fill{background:var(--sample-accent)}
+:is(#boarding,#q1,#q2){--purple:var(--sample-accent);--muted:#58616a}
+:is(#boarding,#q1,#q2) .title-accent{color:var(--sample-accent)}
+:is(#boarding,#q1,#q2) .primary-button{background:var(--sample-accent);border-color:var(--sample-accent);box-shadow:0 8px 22px #263b3015}
+:is(#boarding,#q1,#q2) .primary-button:hover{filter:brightness(.93)}
+:is(#boarding,#q1,#q2) .primary-button:focus-visible,:is(#boarding,#q1,#q2) .journey-object:focus-visible{outline-color:var(--sample-accent)}
+#boarding{grid-template-columns:.8fr 1.2fr;gap:24px;position:relative}
+#boarding h2{font-size:clamp(40px,4.5vw,65px);letter-spacing:-2.8px;line-height:1.1}
+#boarding .instruction{font-size:18px;max-width:340px;margin:24px 0 28px}
+#boarding .privacy-note{font-size:11px;max-width:340px;line-height:1.8;margin-top:22px}
+.departure-stage{position:relative;min-width:0;border-radius:48% 48% 28px 28px;background:#e4f0f5;padding:24px 20px 20px;overflow:hidden;box-shadow:inset 0 0 0 1px #d2e3e9}
+.departure-label{position:absolute;top:28px;left:0;width:100%;text-align:center;z-index:2;font-size:8px;letter-spacing:2px;color:#476a79;pointer-events:none}
+#boarding .journey-object canvas{height:clamp(370px,36vw,500px)}
+.departure-ticket{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff9eb;border:1px solid #e5dfcf;border-radius:15px;padding:17px 20px;position:relative;box-shadow:0 12px 18px #3554690b}
+.departure-ticket>span{font-size:8px;letter-spacing:1.5px;color:#59666d}.departure-ticket strong{display:block;font-size:16px;letter-spacing:-.4px;color:#2f4553;margin-top:5px;font-weight:600}.departure-ticket>b{border-left:1px dashed #bdc6c5;padding-left:18px;font-size:24px;color:#285b73;line-height:1;text-align:center}.departure-ticket small{font-size:7px;letter-spacing:1px}.flight-line{color:#b37d57!important;white-space:nowrap}
+:is(#boarding,#q1,#q2) .journey-scene{background:var(--sample-soft);border-radius:inherit}
+:is(#boarding,#q1,#q2) .journey-object{cursor:grab;touch-action:none;border-radius:inherit}
+:is(#boarding,#q1,#q2) .journey-object:active{cursor:grabbing}
+:is(#boarding,#q1,#q2) .object-hint{color:var(--sample-accent);border:0;background:#fff9edda;font-size:10px;bottom:12px;pointer-events:none}
+:is(#q1,#q2) .quiz-topline{margin-bottom:0}:is(#q1,#q2) .quiz-segments{margin-bottom:24px}
+#q1 .question-layout{grid-template-columns:1.2fr .8fr;gap:clamp(25px,4vw,60px)}
+#q1 .question-art{padding:0;border:0;background:#faebdd;border-radius:38px 38px 38px 8px;overflow:hidden;box-shadow:0 18px 40px #a16e3f0a}
+#q1 .journey-object canvas{height:clamp(360px,34vw,470px)}
+#q1 .art-caption{padding:0 10px 22px;margin:0;color:#80553f;letter-spacing:2.5px}
+:is(#q1,#q2) .question-copy h2{font-size:clamp(33px,3.9vw,56px);letter-spacing:-2px;line-height:1.08;margin-bottom:17px}
+:is(#q1,#q2) .question-instruction{font-size:14px;margin-bottom:20px;line-height:1.5}
+#q1 .route-stops{display:flex;flex-direction:column;gap:0;position:relative}
+#q1 .route-stops:before{content:"";position:absolute;left:20px;top:30px;bottom:30px;border-left:2px dashed #d8ad93}
+#q1 .route-stop{padding:13px 28px 13px 58px;min-height:57px;display:block;border:0;border-radius:12px;background:transparent;box-shadow:none;transition:background 180ms,transform 180ms}
+#q1 .route-stop:hover{background:#f6e7da;transform:translateX(4px)}
+#q1 .route-stop:has(input:checked){background:#f2dfce;box-shadow:none}
+#q1 .answer-index{position:absolute;left:4px;top:12px;border:1px solid #c7a28b;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;padding:0;background:#fff8ef;color:#904632;font-size:11px}
+#q1 .route-stop:has(input:checked) .answer-index{background:#904632;color:white;border-color:#904632}
+#q1 .choice-title{font-size:17px;font-weight:600;line-height:1.6}
+#q1 .answer-copy{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#q1 .answer-check{top:20px;color:#904632}
+#q1 .question-actions{margin-top:20px}
+#q2 .question-layout{grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,60px)}
+#q2 .question-art{grid-column:2;grid-row:1;background:#e4efe5;padding:0;border-radius:42% 42% 24px 24px;overflow:visible;border:2px dashed transparent;transition:border-color 160ms,box-shadow 160ms}
+#q2 .question-copy{grid-column:1;grid-row:1}
+#q2 .journey-scene{border-radius:42% 42% 24px 24px}
+#q2 .journey-object canvas{height:clamp(370px,36vw,490px)}
+#q2 .art-caption{margin:0;padding:0 12px 20px;color:#326552;letter-spacing:1.7px;font-size:9px;text-align:center;line-height:1.5}
+#q2 .question-art[data-drop="waiting"]{border-color:#8eab96}
+#q2 .question-art[data-drop="ready"]{border-color:#326552;box-shadow:0 0 0 8px #32655215}
+#q2 .packing-shelf{display:grid;grid-template-columns:1fr 1fr;gap:17px 14px;padding:5px 0}
+.pack-slot{position:relative;min-width:0}
+#q2 .pack-item{padding:42px 15px 16px;border:1px solid #d0dacc;border-radius:5px 17px 5px 5px;background:#fffaf0;display:flex;flex-direction:column;gap:6px;min-height:132px;box-shadow:0 6px 0 #dee6d7;transition:transform 200ms,border-color 160ms,background 160ms}
+#q2 .pack-item:hover{transform:translateY(-4px);border-color:#80a38f}
+#q2 .pack-item:has(input:checked){background:#d4e7d7;border-color:#326552;box-shadow:0 6px 0 #9cbea8}
+#q2 .answer-index{position:absolute;left:14px;top:10px;font-size:25px;border:0;border-radius:0;width:auto;padding:0;color:#517361;line-height:1}
+#q2 .choice-title{font-size:15px;line-height:1.3;font-weight:650;max-width:180px}
+#q2 .answer-copy{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#q2 .answer-check{top:auto;bottom:10px;color:#326552}
+.pack-grip{position:absolute;right:3px;top:1px;width:44px;height:44px;border:0;background:transparent;border-radius:10px;color:#50705b;font-size:24px;cursor:grab;touch-action:none;z-index:3}
+.pack-grip:hover{background:#cfe1d170}.pack-slot[data-dragging="true"]{background:#fff3ca;box-shadow:0 12px 30px #294e3d30;cursor:grabbing;z-index:8;outline:2px solid #326552;pointer-events:auto}
+.pack-grip:focus-visible{outline:3px solid #326552;outline-offset:1px}
+:is(#q1,#q2) .answer-card:has(input:focus-visible){outline-color:var(--sample-accent)}
+:is(#q1,#q2) .answer-status{color:var(--sample-accent)}
+html[data-motion="off"] :is(#q1,#q2) .answer-card:hover{transform:none}
+@media(min-width:1000px) and (max-height:780px){#boarding .journey-object canvas{height:360px}#boarding h2{font-size:48px}#boarding .instruction{font-size:17px}#q1 .journey-object canvas,#q2 .journey-object canvas{height:355px}:is(#q1,#q2) .question-copy h2{font-size:39px}:is(#q1,#q2) .question-instruction{margin-bottom:14px}#q1 .route-stop{min-height:51px;padding-top:10px;padding-bottom:10px}#q1 .answer-index{top:8px}#q2 .pack-item{min-height:114px;padding-top:40px;padding-bottom:12px}#q2 .packing-shelf{gap:14px}#q2 .choice-title{font-size:14px}}
+@media(max-width:900px){#boarding{grid-template-columns:1fr;gap:25px}#boarding .boarding-copy{text-align:center}#boarding .instruction,#boarding .privacy-note{margin-left:auto;margin-right:auto}#boarding h2{font-size:48px}#boarding .departure-stage{max-width:620px;width:100%;justify-self:center}#boarding .journey-object canvas{height:360px}:is(#q1,#q2) .question-layout{display:flex;flex-direction:column;gap:0}:is(#q1,#q2) .question-copy{display:contents}:is(#q1,#q2) .question-copy h2{order:0;width:100%;font-size:39px}:is(#q1,#q2) .question-instruction{order:1;width:100%;margin-bottom:16px}:is(#q1,#q2) .question-art{order:2;width:100%;max-width:620px;margin:0 0 20px}:is(#q1,#q2) fieldset{order:3;width:100%}:is(#q1,#q2) .question-actions{order:4;align-self:flex-start}:is(#q1,#q2) .journey-object canvas{height:310px}#q1 .route-stops{display:grid;grid-template-columns:1fr 1fr;gap:8px}#q1 .route-stops:before{display:none}#q1 .route-stop{padding-right:20px}#q2 .packing-shelf{grid-template-columns:repeat(4,1fr)}#q2 .pack-item{min-height:132px;padding-left:12px;padding-right:12px}}
+@media(max-width:550px){#boarding h2{font-size:39px;letter-spacing:-2px}#boarding .departure-stage{padding:24px 12px 12px}#boarding .journey-object canvas{height:310px}.departure-ticket{padding:15px 12px;gap:8px}.departure-ticket strong{font-size:13px}.departure-ticket>b{font-size:22px;padding-left:12px}.flight-line{font-size:8px!important}.departure-label{font-size:7px;letter-spacing:1.4px}:is(#q1,#q2) .question-copy h2{font-size:35px}:is(#q1,#q2) .journey-object canvas{height:290px}#q1 .route-stops{grid-template-columns:1fr}#q1 .route-stop{min-height:55px}#q1 .choice-title{font-size:16px}#q2 .packing-shelf{grid-template-columns:1fr 1fr;gap:17px 14px}#q2 .pack-item{min-height:116px}#q2 .choice-title{font-size:15px}:is(#boarding,#q1,#q2) .object-hint{font-size:9px}}
+@media(prefers-reduced-motion:reduce){:is(#q1,#q2) .answer-card:hover{transform:none}}
+
+.pack-slot[data-dragging="true"]{border-radius:12px;isolation:isolate}.pack-slot[data-dragging="true"] .pack-item{transform:none!important}

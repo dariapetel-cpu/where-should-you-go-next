@@ -49,7 +49,7 @@ audit.feed((ROOT / 'index.html').read_text())
 assert audit.language == 'en'
 assert len(audit.ids) == len(set(audit.ids)), 'Duplicate IDs'
 assert all(ref in audit.ids for ref in audit.references), 'Broken ARIA reference'
-assert [slide['id'] for slide in audit.slides] == ['welcome', 'priorities', 'mood']
+assert [slide['id'] for slide in audit.slides] == ['welcome', 'priorities', 'mood', 'boarding', *[f'q{i}' for i in range(1, 8)], 'match']
 assert sum('hidden' not in slide for slide in audit.slides) == 1
 for link in audit.links:
     assert not link.startswith(('https:', 'http:', '//')), f'External dependency: {link}'
@@ -65,6 +65,12 @@ print('PASS: English document, slide count, unique IDs, ARIA references, alt tex
 
 # Representative design-token combinations, not a complete rendered contrast audit.
 for label, foreground, background in [
+    ('White on sky-blue action', '#FFFFFF', '#285B73'),
+    ('White on coral action', '#FFFFFF', '#904632'),
+    ('White on mint action', '#FFFFFF', '#326552'),
+    ('Sky-blue text on blue', '#285B73', '#E4F0F5'),
+    ('Coral text on peach', '#904632', '#FAEBDD'),
+    ('Mint text on mint', '#326552', '#E4EFE5'),
     ('Primary text on cream', '#29243D', '#FFF8EE'),
     ('Secondary text on cream', '#665C74', '#FFF8EE'),
     ('White on primary action', '#FFFFFF', '#6240A5'),

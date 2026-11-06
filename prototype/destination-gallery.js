@@ -1,0 +1,9 @@
+/* Read-only demonstration: deliberately does not access browser storage. */
+(async()=>{'use strict';const status=document.getElementById('gallery-status');try{
+ const response=await fetch('catalog.json');if(!response.ok)throw Error('Catalog');const c=await response.json(),requested=new URLSearchParams(location.search).get('scene')||'paris',chosen=c.destinations.find(d=>d.id===requested)||c.destinations[0],a=Object.fromEntries(c.questions.map((q,i)=>[q.id,chosen.affinities[i][0].toLowerCase()]));
+ const select=document.getElementById('gallery-destination');c.destinations.forEach(d=>{const option=document.createElement('option');option.value=d.id;option.textContent=d.name;select.append(option);});select.value=chosen.id;
+ c.questions.forEach(q=>{const label=document.createElement('label'),input=document.createElement('select');label.textContent=q.id[0].toUpperCase()+q.id.slice(1);q.options.forEach((text,i)=>{const option=document.createElement('option');option.value='abcd'[i];option.textContent=text;input.append(option);});input.value=a[q.id];input.addEventListener('change',()=>{a[q.id]=input.value;update();});label.append(input);document.getElementById('gallery-answers').append(label);});
+ function update(){const result=GetawayMatch.result(c,a);status.textContent=`Sample answers match ${result.winner.destination.name} (${result.winner.score}/60). You may explore any destination without changing this ranking.`;}
+ function enter(){DestinationExperience.open(c,a,{id:select.value,disclosure:'SCENE PREVIEW · seven editable demonstration answers. This is not saved quiz progress.'});}
+ const open=document.getElementById('gallery-open');open.disabled=false;open.addEventListener('click',enter);update();enter();
+}catch{status.textContent='The local catalog could not load. Serve this project over HTTP and refresh.';}})();

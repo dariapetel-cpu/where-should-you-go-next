@@ -1,41 +1,38 @@
-# Planning process and LLM interaction records
+# Development chronology and LLM interaction evidence
 
-This folder documents the three completed planning stages for the university project **What Kind of Traveler Are You?** It records the real user requests available in the current Codex session, how the assistant responded, the critical findings, and the resulting specification changes.
+This index covers the project from the original **What Kind of Traveler Are You?** brief to the final **Where Should You Go Next? — Find Your Perfect Getaway** presentation. For current functionality and setup, read the root [README](../README.md) and [PRD](../PRD.md). Earlier records describe their own historical milestones; phrases such as “not implemented” or “awaiting approval” in those records are not current project status.
 
-## Chronology
+## Chronological records
 
-All three stages took place in the session dated **November 4, 2026**. Exact message timestamps are not recorded here; the numbering establishes their observed order.
+Read in numerical order. Exact message timestamps were not preserved; numbering records the observed sequence. Stage 1–3 records identify November 4, 2026, and the latest delivery/submission stages identify November 6, 2026. Individual files provide their available date context.
 
-| Stage | Record | Purpose | Outcome |
-| --- | --- | --- | --- |
-| 1 | [Initial PRD request](01-initial-prd-request.md) | Define the university project before coding. | Created PRD version 1.0 with 16 slides, seven questions, four profiles, design requirements, and offline Python analysis. |
-| 2 | [Critical review](02-critical-review.md) | Examine the complete plan and identify weaknesses against the supplied requirements. | Delivered a review in the conversation; changed no files. Identified 12 areas to improve. |
-| 3 | [Requested PRD revision](03-requested-prd-revision.md) | Address the review through a stronger specification. | Updated only PRD.md to version 2.0, with stronger visual, interaction, recovery, export, Python, and testing requirements. |
+| Stage | Record | Development evidence |
+| --- | --- | --- |
+| 01 | [Initial PRD request](01-initial-prd-request.md) | Original assignment constraints, sixteen-slide planning and proposed Python contribution. |
+| 02 | [Critical review](02-critical-review.md) | Review of interaction, visuals, reliability and assignment gaps. |
+| 03 | [Requested PRD revision](03-requested-prd-revision.md) | Revised specification before application implementation. |
+| 04 | [Development milestone 1](04-development-milestone-1.md) | Responsive opening-slide foundation. |
+| 05 | [3D visual redesign](05-3d-visual-redesign.md) | Genuine interactive opening objects, interrupted-work recovery and verification limits. |
+| 06 | [Development milestone 2](06-development-milestone-2.md) | Legacy twelve-slide quiz/results, revisions, recovery and exports. |
+| 07 | [Slides 4–6 redesign](07-slides-4-6-redesign.md) | Pointer-responsive airplane, route and packing sample. |
+| 08 | [Getaway prototype](08-getaway-prototype.md) | Approved new concept, isolated questions, deterministic destination matcher and separate state. |
+| 09 | [Destination samples and catalog expansion](09-immersive-destination-samples.md) | Explicit fifteen-destination revision, four WebGL samples and personalized plans. |
+| 10 | [Paris/Tokyo quality pipeline](10-paris-tokyo-quality-pipeline.md) | Rejected blockout quality, licensed-asset pipeline and missing-asset limitations. |
+| 11 | [Eiffel integration and HDRI review](11-eiffel-integration-and-hdri-review.md) | Supplied model, provenance, artistic silver finish and unused HDRI decision. |
+| 12 | [Complete presentation](12-complete-presentation.md) | Full sixteen-slide flow, all fifteen destinations, reused artwork and independent Python analysis. |
+| 13 | [Vibrant editorial redesign](13-vibrant-editorial-redesign.md) | Varied questions, direct answer selection, enlarged passport and cinematic image layers. |
+| 14 | [Result-reveal bug fix](14-result-reveal-bugfix.md) | Reproduced optional-layer error, reliable transition, recovery and regression evidence. |
+| 15 | [Final presentation polish](15-final-presentation-polish.md) | Conservative CSS/markup refinement, editorial ending and verified preservation of application logic. |
+| 16 | [Submission preparation](16-submission-preparation.md) | Read-only audit findings, aligned final documents, screenshot/review requirements, exclusions and test rerun. |
 
-The sequence demonstrates a requirements → critique → revision process. The user set the assignment constraints, requested a critical examination, and then explicitly directed the revision. The assistant proposed implementation decisions and documented them; the conversation does not establish that those decisions or the application have received final approval.
+## Transcript fidelity
 
-## Transcript fidelity and provenance
+Original prompts are quoted verbatim only when available and explicitly labeled. Summaries of user requests, assistant work, findings and implementation decisions are labeled as summaries or reconstructions; they are not full transcripts. Later records do not universally contain verbatim prompts. No exact model ID, missing timestamp, browser result or historical commit is invented.
 
-- Each stage preserves its original user prompt **verbatim** in a text code block, including the wording and paragraph breaks available in the conversation.
-- Assistant activity and outcomes are labeled **reconstructed summaries, not exact transcripts**. They are based on visible messages and tool results, not invented quotations.
-- Purpose statements, tables, and explanations are retrospective documentation written for assessment, not additional historical messages.
-- The records identify Codex as the tool but do not invent an exact model ID, message timestamp, commit hash, or missing interaction.
-- The stage 1 PRD was subsequently replaced by version 2.0. This folder does not claim to preserve an independent historical copy of version 1.0.
-- An internal recovery message interrupted the original drafting turn. It was not a separate user planning stage and is not presented as an academic prompt.
-- This documentation request is the administrative step creating the records, not a fourth design or implementation stage.
+The original PRD version 1 was superseded; these records do not claim an independently preserved v1 file. Earlier planning and README material is retained in [docs/PRD-v3-history.md](../docs/PRD-v3-history.md) and [docs/legacy-development.md](../docs/legacy-development.md).
 
-## What was completed
+## Current evidence and Git history
 
-The completed work is the initial requirements document, a conversational critical review, and a revised [PRD.md](../PRD.md). The initial draft chose a 16-slide, seven-question flow; the review exposed content, visual, interaction, and reliability gaps; the revision addressed them with explicit specifications and acceptance requirements.
+The application is implemented locally; the user reported that all sixteen slides work. The latest automated run has 93 passing Node tests, four Python analysis tests and three passing static checks. Assistant visual/GPU verification and screenshot capture remain unavailable. See the [submission review](../docs/submission-review.md) for precise evidence and outstanding manual checks.
 
-The revision retained all four traveler profiles and proposed destinations while moving the full recommendation to the immediate result screen. It defined a real 3D suitcase, distinct quiz layouts, visual progress, deterministic tie handling, answer-based personalization, session recovery, revised-answer exports, and a reproducible Python demonstration plan.
-
-## What remains planned, not completed
-
-No application has been built. No real 3D asset, quiz implementation, Python script, sample dataset, screenshots, verified travel-fact research, application test results, or deployment was produced during these stages. Document checks establish that the PRD contains the planned sections and slide sequence; they do not establish that future acceptance criteria pass.
-
-Implementation and final approval remain pending. The user's requests consistently required an approval checkpoint before coding. This documentation step creates only the Markdown records in this folder and leaves PRD.md unchanged.
-
-## Use in university assessment
-
-Read the files in numbered order to compare the initial constraints, the critique, and the resulting revision. Each stage includes purpose, the exact user request, a labeled response summary, findings, decisions, changes, evidence, and status. These records show actual planning iteration; they do not replace future source history, visual evidence, testing reports, or implementation improvement records.
+Existing Git history contains the initial planning commit `cf333ac` and the approved opening-slide redesign `11a67cf`. Later changes and records are currently local/uncommitted; these Markdown records demonstrate iteration but do not imply that each milestone has its own Git commit. No history is fabricated, backdated or rewritten during submission preparation.

@@ -50,3 +50,26 @@ traveler-*-r*.json
 # Allow deliberately named synthetic export fixtures in these locations.
 !analysis/sample_responses/traveler-*-r*.json
 !tests/fixtures/traveler-*-r*.json
+
+# Local history, diagnostics, credentials and machine-specific agent settings
+.Rhistory
+.RData
+.Ruserdata
+*.log
+*.pid
+*.pid.lock
+/.codex/
+/.aws/
+/.ssh/
+/secrets/
+*.pem
+*.key
+
+# Browser-test artifacts (curated assessment screenshots belong in docs/screenshots)
+/test-results/
+/playwright-report/
+/coverage/
+
+# Personal downloads produced by the final presentation
+my-getaway-card*.png
+my-getaway-itinerary*.html

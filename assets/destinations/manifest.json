@@ -1,0 +1,70 @@
+{
+  "origin": "Original AI-generated illustrative artwork created with OpenAI image generation during this Codex project session; not documentary photography or a third-party CC0 asset.",
+  "date": "2026-11-06",
+  "processing": "Original PNGs preserved. Local JPEG copies at quality 88 served in four atlases; browser crops each 2x2 tile into local WebP data URLs.",
+  "tile_order": [
+    "paris",
+    "rome",
+    "barcelona",
+    "london",
+    "amsterdam",
+    "lisbon",
+    "tokyo",
+    "kyoto",
+    "new-york",
+    "bali",
+    "bangkok",
+    "greek-islands",
+    "swiss-alps",
+    "iceland",
+    "queenstown",
+    "airplane-wing"
+  ],
+  "files": [
+    {
+      "path": "atlas-0.jpg",
+      "bytes": 1107575,
+      "sha256": "5a0630200eb157d17f250edd6965ef48bbd795a670bbaf7ecf4a4d6b6961b5e2"
+    },
+    {
+      "path": "atlas-0.png",
+      "bytes": 3790213,
+      "sha256": "f0fc3aae4c10dc35869e11d212bda0ceb1adbd22124c89a01e2a3c54ffa97660"
+    },
+    {
+      "path": "atlas-1.jpg",
+      "bytes": 1060211,
+      "sha256": "f2c73ee295d6e2345f65971dd02bc477ee3acbbe13d4b84b688d3b7e2b104b5c"
+    },
+    {
+      "path": "atlas-1.png",
+      "bytes": 3619896,
+      "sha256": "644eedddfb2177c841ad7de28c3eba1dc38bf2441c22ec6b0e4c82ff20f2c12b"
+    },
+    {
+      "path": "atlas-2.jpg",
+      "bytes": 960531,
+      "sha256": "002449544b4cb14e5d76be8de5e261752f38c9dafbfeb04bada34916a30f395c"
+    },
+    {
+      "path": "atlas-2.png",
+      "bytes": 3402036,
+      "sha256": "516146f157421959ffe0cbd2e815f75e395b08f1c4c7776a3a2e0331a6795d51"
+    },
+    {
+      "path": "atlas-3.jpg",
+      "bytes": 889984,
+      "sha256": "83be4a2d2bcd512a566e10a6ca2b035799d32349ef19f4dfeefbfaae264f7e93"
+    },
+    {
+      "path": "atlas-3.png",
+      "bytes": 3245552,
+      "sha256": "fcf9942888a5a3f6a5bbc582ab569a3ad3f22a144c101a464b9857197fe8ec07"
+    },
+    {
+      "path": "travel-atlas.png",
+      "bytes": 3523441,
+      "sha256": "2e2f2e94fafaf7c67a1b090c2b91f8c11a174ecd8162deee505c54182d6ea1bd"
+    }
+  ]
+}

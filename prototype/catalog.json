@@ -1,0 +1,409 @@
+{
+  "version": "getaway-prototype-1",
+  "catalog_version": "getaway-2.0.0",
+  "matcher_version": "1.0.0",
+  "questions": [
+    {
+      "id": "vacation",
+      "options": [
+        "Coast and beach",
+        "City break",
+        "Nature and outdoors",
+        "Culture and heritage"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "interests",
+      "options": [
+        "Food and markets",
+        "Art and history",
+        "Outdoor exploration",
+        "Music and evening life"
+      ],
+      "weight": 4
+    },
+    {
+      "id": "pace",
+      "options": [
+        "Slow and spacious",
+        "Balanced days",
+        "See and do a lot",
+        "Leave room for spontaneity"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "companions",
+      "options": [
+        "On my own",
+        "With a partner",
+        "With friends",
+        "With family"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "budget",
+      "options": [
+        "Keep costs low",
+        "Mid-range comfort",
+        "Room to splurge",
+        "Flexible / not sure"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "packing",
+      "options": [
+        "Camera",
+        "Walking shoes",
+        "A book",
+        "Food journal"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "dream",
+      "options": [
+        "A sunset by the sea",
+        "An iconic cultural landmark",
+        "A mountain or nature panorama",
+        "A memorable local feast"
+      ],
+      "weight": 4
+    }
+  ],
+  "tie_priority": [
+    "vacation",
+    "dream",
+    "interests",
+    "budget",
+    "pace",
+    "companions",
+    "packing"
+  ],
+  "destinations": [
+    {
+      "id": "paris",
+      "affinities": [
+        "B/D",
+        "B/A",
+        "B/C",
+        "B/A",
+        "C/B",
+        "A/C",
+        "B/D"
+      ],
+      "name": "Paris",
+      "country": "France",
+      "tagline": "Art, atmosphere, and a little everyday magic.",
+      "attractions": [
+        "Eiffel Tower",
+        "Seine riverbanks",
+        "Montmartre"
+      ],
+      "source": "https://parisjetaime.com/eng/"
+    },
+    {
+      "id": "rome",
+      "affinities": [
+        "D/B",
+        "B/A",
+        "C/B",
+        "D/B",
+        "B/A",
+        "B/A",
+        "B/D"
+      ],
+      "name": "Rome",
+      "country": "Italy",
+      "tagline": "Let history set the scene.",
+      "attractions": [
+        "Roman Forum",
+        "Trevi Fountain",
+        "Trastevere"
+      ],
+      "source": "https://www.turismoroma.it/en"
+    },
+    {
+      "id": "barcelona",
+      "affinities": [
+        "A/B",
+        "D/A",
+        "C/D",
+        "C/B",
+        "B/C",
+        "A/D",
+        "A/B"
+      ],
+      "name": "Barcelona",
+      "country": "Spain",
+      "tagline": "A city with a little salt in the air.",
+      "attractions": [
+        "Gothic Quarter",
+        "Sagrada Família",
+        "Barceloneta waterfront"
+      ],
+      "source": "https://thisisbarcelona.com/"
+    },
+    {
+      "id": "london",
+      "name": "London",
+      "country": "United Kingdom",
+      "tagline": "A city of stories, old and new.",
+      "affinities": [
+        "B/D",
+        "B/D",
+        "B/C",
+        "A/D",
+        "C/B",
+        "B/A",
+        "B/D"
+      ],
+      "attractions": [
+        "Westminster",
+        "South Bank",
+        "Borough Market"
+      ],
+      "source": "https://www.visitlondon.com/"
+    },
+    {
+      "id": "amsterdam",
+      "affinities": [
+        "B/D",
+        "B/D",
+        "D/B",
+        "A/C",
+        "B/C",
+        "A/B",
+        "B/D"
+      ],
+      "name": "Amsterdam",
+      "country": "The Netherlands",
+      "tagline": "Follow the canals, find your own rhythm.",
+      "attractions": [
+        "Canal district",
+        "Rijksmuseum",
+        "Vondelpark"
+      ],
+      "source": "https://www.iamsterdam.com/en/see-and-do"
+    },
+    {
+      "id": "lisbon",
+      "affinities": [
+        "B/A",
+        "A/D",
+        "D/B",
+        "B/C",
+        "A/B",
+        "A/D",
+        "A/D"
+      ],
+      "name": "Lisbon",
+      "country": "Portugal",
+      "tagline": "Take the scenic way through the city.",
+      "attractions": [
+        "Alfama",
+        "Belém waterfront",
+        "Baixa"
+      ],
+      "source": "https://www.visitlisboa.com/?lang=en"
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "country": "Japan",
+      "tagline": "Tradition meets the electric city.",
+      "affinities": [
+        "B/D",
+        "D/A",
+        "C/D",
+        "C/A",
+        "B/C",
+        "D/A",
+        "D/B"
+      ],
+      "attractions": [
+        "Asakusa",
+        "Shibuya",
+        "Sumida riverfront"
+      ],
+      "source": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html"
+    },
+    {
+      "id": "kyoto",
+      "affinities": [
+        "D/C",
+        "B/A",
+        "B/A",
+        "A/B",
+        "B/C",
+        "A/B",
+        "B/C"
+      ],
+      "name": "Kyoto",
+      "country": "Japan",
+      "tagline": "A quieter kind of discovery.",
+      "attractions": [
+        "Nishiki Market",
+        "Nanzen-ji temple area",
+        "Arashiyama"
+      ],
+      "source": "https://www.japan.travel/en/destinations/kansai/kyoto/"
+    },
+    {
+      "id": "new-york",
+      "name": "New York",
+      "country": "United States",
+      "tagline": "Find your own New York minute.",
+      "affinities": [
+        "B/D",
+        "D/B",
+        "C/B",
+        "A/C",
+        "C/B",
+        "A/D",
+        "B/D"
+      ],
+      "attractions": [
+        "Central Park",
+        "Brooklyn Bridge",
+        "Midtown"
+      ],
+      "source": "https://www.nyctourism.com/"
+    },
+    {
+      "id": "bali",
+      "name": "Bali",
+      "country": "Indonesia",
+      "tagline": "Ocean air and a gentler rhythm.",
+      "affinities": [
+        "A/C",
+        "C/A",
+        "A/B",
+        "B/D",
+        "B/A",
+        "C/A",
+        "A/C"
+      ],
+      "attractions": [
+        "Sanur coast",
+        "Ubud",
+        "Tegalalang terraces"
+      ],
+      "source": "https://www.indonesia.travel/id/en/destination/bali-nusa-tenggara/bali"
+    },
+    {
+      "id": "bangkok",
+      "name": "Bangkok",
+      "country": "Thailand",
+      "tagline": "Follow the river. Stay for the flavor.",
+      "affinities": [
+        "D/B",
+        "A/D",
+        "D/C",
+        "C/A",
+        "A/B",
+        "D/B",
+        "D/B"
+      ],
+      "attractions": [
+        "Rattanakosin",
+        "Chao Phraya riverfront",
+        "Chinatown"
+      ],
+      "source": "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219"
+    },
+    {
+      "id": "greek-islands",
+      "name": "Greek Islands",
+      "country": "Greece",
+      "tagline": "Whitewashed lanes and wide blue horizons.",
+      "affinities": [
+        "A/D",
+        "A/B",
+        "A/D",
+        "D/B",
+        "B/C",
+        "C/A",
+        "A/D"
+      ],
+      "attractions": [
+        "Naxos old town",
+        "Portara",
+        "Agios Georgios beach"
+      ],
+      "source": "https://www.visitgreece.gr/islands/cyclades/naxos/"
+    },
+    {
+      "id": "swiss-alps",
+      "name": "Swiss Alps",
+      "country": "Switzerland",
+      "tagline": "A little closer to the sky.",
+      "affinities": [
+        "C/D",
+        "C/B",
+        "B/A",
+        "D/B",
+        "C/B",
+        "B/A",
+        "C/B"
+      ],
+      "attractions": [
+        "Zermatt village",
+        "Matterhorn viewpoints",
+        "Stellisee"
+      ],
+      "source": "https://www.myswitzerland.com/en-us/destinations/lake-stelli/"
+    },
+    {
+      "id": "iceland",
+      "name": "Iceland",
+      "country": "Iceland",
+      "tagline": "Big skies. A different kind of wild.",
+      "affinities": [
+        "C/B",
+        "C/B",
+        "D/B",
+        "A/B",
+        "C/B",
+        "B/A",
+        "C/B"
+      ],
+      "attractions": [
+        "Reykjavík harbour",
+        "Harpa",
+        "Hallgrímskirkja"
+      ],
+      "source": "https://visitreykjavik.is/"
+    },
+    {
+      "id": "queenstown",
+      "affinities": [
+        "C/A",
+        "C/D",
+        "C/B",
+        "C/B",
+        "C/B",
+        "B/A",
+        "C/A"
+      ],
+      "name": "Queenstown",
+      "country": "New Zealand",
+      "tagline": "Make room for a bigger view.",
+      "attractions": [
+        "Queenstown Gardens",
+        "Lake Wakatipu waterfront",
+        "Arrowtown"
+      ],
+      "source": "https://www.queenstownnz.co.nz/things-to-do/outdoor-activities/walking-and-hiking/"
+    }
+  ],
+  "fixture": {
+    "companions": "b",
+    "budget": "d",
+    "packing": "a",
+    "dream": "b"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "engine": "three-r170",
+  "dependencies": [
+    "vendor/three/build/three.module.js",
+    "vendor/three/examples/jsm/loaders/GLTFLoader.js",
+    "vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+    "vendor/three/LICENSE"
+  ],
+  "scenes": {
+    "paris": {
+      "status": "partial-preview",
+      "label": "Paris silver Eiffel Tower / partial street preview",
+      "assets": [
+        {
+          "id": "environment",
+          "path": "assets/paris/environment.glb",
+          "required": true,
+          "sha256": "a6aee356284b359398691360b3aee135fc4e97381b0868c173d0fb871cf1f29b",
+          "author": "Original creator unverified; 3D Model Repository contributor: n42k",
+          "source": "https://3dmr.eu/model/4/2",
+          "license": "CC0-1.0",
+          "license_file": "assets/paris/eiffel-tower-provenance.md"
+        },
+        {
+          "id": "lighting-reference",
+          "path": "assets/paris/rathaus_4k.exr",
+          "required": false,
+          "runtime": false,
+          "sha256": "b1a1b60f324ea0b648ff0a216ef5ea1cf06560c159c4c169db4ff21d1fef4732",
+          "author": "Greg Zaal",
+          "source": "https://polyhaven.com/a/rathaus",
+          "license": "CC0-1.0",
+          "license_file": "assets/paris/rathaus-provenance.md"
+        }
+      ],
+      "anchors": [],
+      "camera": {
+        "eye": [
+          9,
+          4.7,
+          18
+        ],
+        "target": [
+          0,
+          2.7,
+          -1
+        ]
+      },
+      "lighting": {
+        "sky": "#E8B99C",
+        "key": "#FFD9AC",
+        "intensity": 2.5,
+        "exposure": 1.1,
+        "ambient": 0.8
+      },
+      "budgets": {
+        "download_mb": 18,
+        "triangles": 180000,
+        "draw_calls": 120,
+        "texture_edge": 2048
+      },
+      "animation_clips": [],
+      "mode": "paris-landmark",
+      "missing": [
+        "Licensed animated pedestrian and vehicle assets",
+        "Complete verified Paris street environment",
+        "Visual and GPU performance approval"
+      ]
+    },
+    "tokyo": {
+      "status": "awaiting-assets",
+      "label": "Tokyo illuminated night street",
+      "assets": [
+        {
+          "id": "environment",
+          "path": "assets/tokyo/environment.glb",
+          "required": true,
+          "sha256": null,
+          "author": null,
+          "source": null,
+          "license": null,
+          "license_file": null
+        },
+        {
+          "id": "backdrop",
+          "path": "assets/tokyo/backdrop.webp",
+          "required": true,
+          "sha256": null,
+          "author": null,
+          "source": null,
+          "license": null,
+          "license_file": null
+        }
+      ],
+      "anchors": [
+        "attraction_0",
+        "attraction_1",
+        "attraction_2"
+      ],
+      "camera": {
+        "eye": [
+          7,
+          4,
+          12
+        ],
+        "target": [
+          0,
+          1.6,
+          0
+        ]
+      },
+      "lighting": {
+        "sky": "#151E3B",
+        "key": "#9DB8FF",
+        "intensity": 1.2,
+        "exposure": 1.2,
+        "ambient": 0.45
+      },
+      "budgets": {
+        "download_mb": 18,
+        "triangles": 180000,
+        "draw_calls": 120,
+        "texture_edge": 2048
+      },
+      "animation_clips": [
+        "pedestrian_crossing",
+        "traffic_loop",
+        "sign_cycle"
+      ]
+    }
+  }
+}
